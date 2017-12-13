@@ -20,8 +20,33 @@ struct WellWomenExam {
 	lazy var zeroToFiveChoices = zeroToFourChoices + ["5"]
 	lazy var zeroToSixChoices = zeroToFiveChoices + ["6"]
 	
-	func processFxMatrixes() {
-		
+	func processFxMatricesData(_ data:[(matrix:Int, selections:[Int])]) -> String {
+		var resultArray = [String]()
+		var results = String()
+		for item in data {
+			resultArray.append("\(FxSection.item.matrix): \()")
+		}
+		return results
+	}
+}
+
+enum FxSection:Int {
+	case breast = 1
+	case colon
+	case uterine
+	case overian
+	case osteoporosis
+	case heart
+	
+	var fullValue: String {
+		switch self {
+		case .breast: return "Breast cancer"
+		case .colon: return "Colon cancer"
+		case .uterine: return "Uterine cancer"
+		case .overian: return "Overian cancer"
+		case .osteoporosis: return "Osteoporosis"
+		case .heart: return "Heart disease"
+		}
 	}
 }
 

@@ -85,6 +85,31 @@ func makeFirstCharacterInStringArrayUppercase(_ theArray: [String])->[String] {
 	return changedArray
 }
 
+func getMatricesIn(view: NSView) -> [NSMatrix] {
+	var results = [NSMatrix]()
+	
+		for item in view.subviews {
+			if let isMatrix = item as? NSMatrix {
+				results.append(isMatrix)
+			} else if item is NSView {
+				results += getMatricesIn(view: item)
+			}
+	}
+	return results
+}
+
+func getActiveCellsFromMatrix(_ matrix:NSMatrix) -> [Int] {
+	var results = [Int]()
+	for item in matrix.subviews {
+		if let box = item as? NSButton {
+			if box.state == .on {
+				results.append(box.tag)
+			}
+		}
+	}
+	return results
+}
+
 func getButtonsIn(view: NSView) -> [(Int, String?)]{
 	var results = [(Int, String?)]()
 	for item in view.subviews {

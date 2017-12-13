@@ -28,5 +28,17 @@ class WWEViewController: NSViewController {
 	@IBAction func processWWETab(_ sender: Any) {
 	}
 	
+	func getMatrixInfoFrom(_ view: NSView) -> [(matrix:Int, selections:[Int])] {
+		var results = [(matrix:Int, selections:[Int])]()
+		let matrices = getMatricesIn(view: view)
+		for matrix in matrices {
+			let selected = getActiveCellsFromMatrix(matrix)
+			if !selected.isEmpty {
+				results.append((matrix:matrix.tag, selections:selected))
+			}
+		}
+		return results
+	}
+	
 	
 }
