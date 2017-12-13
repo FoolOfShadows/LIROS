@@ -10,9 +10,23 @@ import Cocoa
 
 class WWEViewController: NSViewController {
 
-    override func viewDidLoad() {
+	@IBOutlet var wweTabView: NSView!
+	@IBOutlet weak var firstBox: NSBox!
+	@IBOutlet weak var fxBox: NSBox!
+	@IBOutlet weak var thirdBox: NSBox!
+	
+	override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.
     }
     
+	@IBAction func clearWWETab(_ sender: Any) {
+		wweTabView.clearControllers()
+	}
+	
+	
+	@IBAction func processWWETab(_ sender: Any) {
+	}
+	
+	
 }
