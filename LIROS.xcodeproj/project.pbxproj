@@ -7,19 +7,69 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7900B99E1FB1F589001C2DB1 /* HPIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7900B99D1FB1F589001C2DB1 /* HPIViewController.swift */; };
+		7900B9A01FB1F598001C2DB1 /* HPIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7900B99F1FB1F598001C2DB1 /* HPIModel.swift */; };
+		790B008F1F98F13A0031B190 /* RadRefVewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790B008E1F98F13A0031B190 /* RadRefVewController.swift */; };
+		790B00911F98F2530031B190 /* RadRefModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790B00901F98F2530031B190 /* RadRefModel.swift */; };
+		790C7E701F9A6470001B02F2 /* DoctorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790C7E6F1F9A6470001B02F2 /* DoctorViewController.swift */; };
+		790C7E721F9A6482001B02F2 /* DoctorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790C7E711F9A6482001B02F2 /* DoctorModel.swift */; };
+		795132EB1FD9BF8C00BBF5B3 /* ProcInjViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795132EA1FD9BF8C00BBF5B3 /* ProcInjViewController.swift */; };
+		795132ED1FD9BF9E00BBF5B3 /* ProcInjModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795132EC1FD9BF9E00BBF5B3 /* ProcInjModel.swift */; };
 		796248531E952D9600AB8361 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796248521E952D9600AB8361 /* AppDelegate.swift */; };
 		796248551E952D9600AB8361 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796248541E952D9600AB8361 /* ViewController.swift */; };
 		796248571E952D9700AB8361 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 796248561E952D9700AB8361 /* Assets.xcassets */; };
 		7962485A1E952D9700AB8361 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 796248581E952D9700AB8361 /* Main.storyboard */; };
+		796248641E95351300AB8361 /* GeneralExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796248611E95351300AB8361 /* GeneralExtensions.swift */; };
+		796248661E95351300AB8361 /* BlackLineClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796248631E95351300AB8361 /* BlackLineClass.swift */; };
+		796248681E95369A00AB8361 /* RedGreenCheckbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796248671E95369A00AB8361 /* RedGreenCheckbox.swift */; };
+		7962486A1E953D5800AB8361 /* ROSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796248691E953D5800AB8361 /* ROSViewController.swift */; };
+		79629E6A1FAA3D66001840DE /* LabSetUpPrintViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79629E691FAA3D66001840DE /* LabSetUpPrintViewController.swift */; };
+		79629E6C1FAA49EA001840DE /* PrintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79629E6B1FAA49EA001840DE /* PrintView.swift */; };
+		797A2D271FC5E9E4002F8396 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797A2D261FC5E9E4002F8396 /* TabViewController.swift */; };
+		798A06B61FD717EB00B81A52 /* DMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798A06B51FD717EB00B81A52 /* DMViewController.swift */; };
+		798A06B81FD717F900B81A52 /* DMModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798A06B71FD717F900B81A52 /* DMModel.swift */; };
+		79A2092F1FE1718B000D2628 /* WWEViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A2092E1FE1718B000D2628 /* WWEViewController.swift */; };
+		79A209311FE17199000D2628 /* WWEModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A209301FE17199000D2628 /* WWEModel.swift */; };
+		79B226C01FAB557F0035C703 /* LabPrintViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B226BF1FAB557F0035C703 /* LabPrintViewController.swift */; };
+		79D312251E9686870063C1FD /* ROSModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D312241E9686870063C1FD /* ROSModel.swift */; };
+		79D907B01FA78B5F00CB8FC0 /* LabsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D907AF1FA78B5F00CB8FC0 /* LabsViewController.swift */; };
+		79D907B21FA78B7400CB8FC0 /* LabsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D907B11FA78B7400CB8FC0 /* LabsModel.swift */; };
+		79DCEF161FD1CDDB004C8066 /* PainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DCEF151FD1CDDB004C8066 /* PainViewController.swift */; };
+		79DCEF181FD1CE19004C8066 /* PainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DCEF171FD1CE19004C8066 /* PainModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7900B99D1FB1F589001C2DB1 /* HPIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HPIViewController.swift; sourceTree = "<group>"; };
+		7900B99F1FB1F598001C2DB1 /* HPIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HPIModel.swift; sourceTree = "<group>"; };
+		790B008E1F98F13A0031B190 /* RadRefVewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadRefVewController.swift; sourceTree = "<group>"; };
+		790B00901F98F2530031B190 /* RadRefModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadRefModel.swift; sourceTree = "<group>"; };
+		790C7E6F1F9A6470001B02F2 /* DoctorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorViewController.swift; sourceTree = "<group>"; };
+		790C7E711F9A6482001B02F2 /* DoctorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorModel.swift; sourceTree = "<group>"; };
+		795132EA1FD9BF8C00BBF5B3 /* ProcInjViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcInjViewController.swift; sourceTree = "<group>"; };
+		795132EC1FD9BF9E00BBF5B3 /* ProcInjModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcInjModel.swift; sourceTree = "<group>"; };
 		7962484F1E952D9600AB8361 /* LIROS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LIROS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		796248521E952D9600AB8361 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		796248541E952D9600AB8361 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		796248561E952D9700AB8361 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		796248591E952D9700AB8361 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7962485B1E952D9700AB8361 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		796248611E95351300AB8361 /* GeneralExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralExtensions.swift; sourceTree = "<group>"; };
+		796248631E95351300AB8361 /* BlackLineClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlackLineClass.swift; sourceTree = "<group>"; };
+		796248671E95369A00AB8361 /* RedGreenCheckbox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedGreenCheckbox.swift; sourceTree = "<group>"; };
+		796248691E953D5800AB8361 /* ROSViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ROSViewController.swift; sourceTree = "<group>"; };
+		79629E691FAA3D66001840DE /* LabSetUpPrintViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabSetUpPrintViewController.swift; sourceTree = "<group>"; };
+		79629E6B1FAA49EA001840DE /* PrintView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintView.swift; sourceTree = "<group>"; };
+		797A2D261FC5E9E4002F8396 /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
+		798A06B51FD717EB00B81A52 /* DMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMViewController.swift; sourceTree = "<group>"; };
+		798A06B71FD717F900B81A52 /* DMModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMModel.swift; sourceTree = "<group>"; };
+		79A2092E1FE1718B000D2628 /* WWEViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWEViewController.swift; sourceTree = "<group>"; };
+		79A209301FE17199000D2628 /* WWEModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWEModel.swift; sourceTree = "<group>"; };
+		79B226BF1FAB557F0035C703 /* LabPrintViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabPrintViewController.swift; sourceTree = "<group>"; };
+		79D312241E9686870063C1FD /* ROSModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ROSModel.swift; sourceTree = "<group>"; };
+		79D907AF1FA78B5F00CB8FC0 /* LabsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabsViewController.swift; sourceTree = "<group>"; };
+		79D907B11FA78B7400CB8FC0 /* LabsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabsModel.swift; sourceTree = "<group>"; };
+		79DCEF151FD1CDDB004C8066 /* PainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PainViewController.swift; sourceTree = "<group>"; };
+		79DCEF171FD1CE19004C8066 /* PainModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PainModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,9 +104,34 @@
 			children = (
 				796248521E952D9600AB8361 /* AppDelegate.swift */,
 				796248541E952D9600AB8361 /* ViewController.swift */,
+				797A2D261FC5E9E4002F8396 /* TabViewController.swift */,
 				796248561E952D9700AB8361 /* Assets.xcassets */,
 				796248581E952D9700AB8361 /* Main.storyboard */,
+				796248691E953D5800AB8361 /* ROSViewController.swift */,
+				79D312241E9686870063C1FD /* ROSModel.swift */,
+				79D907AF1FA78B5F00CB8FC0 /* LabsViewController.swift */,
+				79D907B11FA78B7400CB8FC0 /* LabsModel.swift */,
+				79629E691FAA3D66001840DE /* LabSetUpPrintViewController.swift */,
+				79B226BF1FAB557F0035C703 /* LabPrintViewController.swift */,
+				790B008E1F98F13A0031B190 /* RadRefVewController.swift */,
+				790B00901F98F2530031B190 /* RadRefModel.swift */,
+				790C7E6F1F9A6470001B02F2 /* DoctorViewController.swift */,
+				790C7E711F9A6482001B02F2 /* DoctorModel.swift */,
+				7900B99D1FB1F589001C2DB1 /* HPIViewController.swift */,
+				7900B99F1FB1F598001C2DB1 /* HPIModel.swift */,
+				79DCEF151FD1CDDB004C8066 /* PainViewController.swift */,
+				79DCEF171FD1CE19004C8066 /* PainModel.swift */,
+				798A06B51FD717EB00B81A52 /* DMViewController.swift */,
+				798A06B71FD717F900B81A52 /* DMModel.swift */,
+				795132EA1FD9BF8C00BBF5B3 /* ProcInjViewController.swift */,
+				795132EC1FD9BF9E00BBF5B3 /* ProcInjModel.swift */,
+				79A2092E1FE1718B000D2628 /* WWEViewController.swift */,
+				79A209301FE17199000D2628 /* WWEModel.swift */,
 				7962485B1E952D9700AB8361 /* Info.plist */,
+				796248611E95351300AB8361 /* GeneralExtensions.swift */,
+				796248631E95351300AB8361 /* BlackLineClass.swift */,
+				796248671E95369A00AB8361 /* RedGreenCheckbox.swift */,
+				79629E6B1FAA49EA001840DE /* PrintView.swift */,
 			);
 			path = LIROS;
 			sourceTree = "<group>";
@@ -88,12 +163,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Fulgent Wake";
 				TargetAttributes = {
 					7962484E1E952D9600AB8361 = {
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = VY6BVT84SC;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -133,8 +209,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79D907B21FA78B7400CB8FC0 /* LabsModel.swift in Sources */,
+				79D907B01FA78B5F00CB8FC0 /* LabsViewController.swift in Sources */,
+				79A209311FE17199000D2628 /* WWEModel.swift in Sources */,
+				79B226C01FAB557F0035C703 /* LabPrintViewController.swift in Sources */,
 				796248551E952D9600AB8361 /* ViewController.swift in Sources */,
+				790C7E701F9A6470001B02F2 /* DoctorViewController.swift in Sources */,
+				79D312251E9686870063C1FD /* ROSModel.swift in Sources */,
+				795132ED1FD9BF9E00BBF5B3 /* ProcInjModel.swift in Sources */,
+				79DCEF161FD1CDDB004C8066 /* PainViewController.swift in Sources */,
+				796248681E95369A00AB8361 /* RedGreenCheckbox.swift in Sources */,
+				796248661E95351300AB8361 /* BlackLineClass.swift in Sources */,
+				7900B99E1FB1F589001C2DB1 /* HPIViewController.swift in Sources */,
+				795132EB1FD9BF8C00BBF5B3 /* ProcInjViewController.swift in Sources */,
+				7962486A1E953D5800AB8361 /* ROSViewController.swift in Sources */,
+				796248641E95351300AB8361 /* GeneralExtensions.swift in Sources */,
+				79A2092F1FE1718B000D2628 /* WWEViewController.swift in Sources */,
+				79DCEF181FD1CE19004C8066 /* PainModel.swift in Sources */,
+				79629E6A1FAA3D66001840DE /* LabSetUpPrintViewController.swift in Sources */,
+				79629E6C1FAA49EA001840DE /* PrintView.swift in Sources */,
+				798A06B61FD717EB00B81A52 /* DMViewController.swift in Sources */,
 				796248531E952D9600AB8361 /* AppDelegate.swift in Sources */,
+				790B008F1F98F13A0031B190 /* RadRefVewController.swift in Sources */,
+				798A06B81FD717F900B81A52 /* DMModel.swift in Sources */,
+				790B00911F98F2530031B190 /* RadRefModel.swift in Sources */,
+				790C7E721F9A6482001B02F2 /* DoctorModel.swift in Sources */,
+				7900B9A01FB1F598001C2DB1 /* HPIModel.swift in Sources */,
+				797A2D271FC5E9E4002F8396 /* TabViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,7 +262,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -169,7 +272,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -210,7 +317,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -218,7 +327,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -252,7 +365,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fulgentwake.LIROS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -266,7 +380,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fulgentwake.LIROS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -289,6 +404,7 @@
 				796248601E952D9700AB8361 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
