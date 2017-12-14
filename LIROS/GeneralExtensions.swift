@@ -95,18 +95,18 @@ func getMatricesIn(view: NSView) -> [NSMatrix] {
 				results += getMatricesIn(view: item)
 			}
 	}
+	//print("getMatricesIn: \(results)")
 	return results
 }
 
 func getActiveCellsFromMatrix(_ matrix:NSMatrix) -> [Int] {
 	var results = [Int]()
-	for item in matrix.subviews {
-		if let box = item as? NSButton {
-			if box.state == .on {
-				results.append(box.tag)
-			}
+	for item in matrix.cells {
+			if item.state == .on {
+				results.append(item.tag)
 		}
 	}
+	//print("getActiveCellsFromMatrix: \(results)")
 	return results
 }
 

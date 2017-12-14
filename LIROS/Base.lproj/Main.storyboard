@@ -667,7 +667,7 @@
         <scene sceneID="R2V-B0-nI4">
             <objects>
                 <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
-                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
+                    <window key="window" title="LIROS" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="349" y="275" width="1028" height="737"/>
@@ -9479,7 +9479,7 @@ Gw
                                             <rect key="frame" x="116" y="50" width="496" height="138"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <subviews>
-                                                <matrix verticalHuggingPriority="750" tag="100" mode="highlight" allowsEmptySelection="NO" autosizesCells="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HCg-Gh-JeF">
+                                                <matrix verticalHuggingPriority="750" tag="600" mode="highlight" allowsEmptySelection="NO" autosizesCells="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HCg-Gh-JeF">
                                                     <rect key="frame" x="0.0" y="120" width="496" height="18"/>
                                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                     <size key="cellSize" width="31" height="18"/>
@@ -9586,7 +9586,7 @@ Gw
                                                         </column>
                                                     </cells>
                                                 </matrix>
-                                                <matrix verticalHuggingPriority="750" tag="200" mode="highlight" allowsEmptySelection="NO" autosizesCells="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hir-sZ-YXb">
+                                                <matrix verticalHuggingPriority="750" tag="700" mode="highlight" allowsEmptySelection="NO" autosizesCells="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hir-sZ-YXb">
                                                     <rect key="frame" x="0.0" y="100" width="496" height="18"/>
                                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                     <size key="cellSize" width="31" height="18"/>
@@ -9693,7 +9693,7 @@ Gw
                                                         </column>
                                                     </cells>
                                                 </matrix>
-                                                <matrix verticalHuggingPriority="750" tag="300" mode="highlight" allowsEmptySelection="NO" autosizesCells="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vh7-dS-Bdh">
+                                                <matrix verticalHuggingPriority="750" tag="100" mode="highlight" allowsEmptySelection="NO" autosizesCells="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vh7-dS-Bdh">
                                                     <rect key="frame" x="0.0" y="80" width="496" height="18"/>
                                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                     <size key="cellSize" width="31" height="18"/>
@@ -9800,7 +9800,7 @@ Gw
                                                         </column>
                                                     </cells>
                                                 </matrix>
-                                                <matrix verticalHuggingPriority="750" tag="400" mode="highlight" allowsEmptySelection="NO" autosizesCells="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k4c-ma-cJ9">
+                                                <matrix verticalHuggingPriority="750" tag="200" mode="highlight" allowsEmptySelection="NO" autosizesCells="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k4c-ma-cJ9">
                                                     <rect key="frame" x="0.0" y="60" width="496" height="18"/>
                                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                     <size key="cellSize" width="31" height="18"/>
@@ -9907,7 +9907,7 @@ Gw
                                                         </column>
                                                     </cells>
                                                 </matrix>
-                                                <matrix verticalHuggingPriority="750" tag="500" mode="highlight" allowsEmptySelection="NO" autosizesCells="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ZS-J8-be7">
+                                                <matrix verticalHuggingPriority="750" tag="300" mode="highlight" allowsEmptySelection="NO" autosizesCells="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ZS-J8-be7">
                                                     <rect key="frame" x="0.0" y="40" width="496" height="18"/>
                                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                     <size key="cellSize" width="31" height="18"/>
@@ -10014,7 +10014,7 @@ Gw
                                                         </column>
                                                     </cells>
                                                 </matrix>
-                                                <matrix verticalHuggingPriority="750" tag="600" mode="highlight" allowsEmptySelection="NO" autosizesCells="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gpL-Wc-IeC">
+                                                <matrix verticalHuggingPriority="750" tag="400" mode="highlight" allowsEmptySelection="NO" autosizesCells="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gpL-Wc-IeC">
                                                     <rect key="frame" x="0.0" y="20" width="496" height="18"/>
                                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                     <size key="cellSize" width="31" height="18"/>
@@ -10121,7 +10121,7 @@ Gw
                                                         </column>
                                                     </cells>
                                                 </matrix>
-                                                <matrix verticalHuggingPriority="750" tag="700" mode="highlight" allowsEmptySelection="NO" autosizesCells="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cds-iu-alM">
+                                                <matrix verticalHuggingPriority="750" tag="500" mode="highlight" allowsEmptySelection="NO" autosizesCells="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cds-iu-alM">
                                                     <rect key="frame" x="0.0" y="0.0" width="496" height="18"/>
                                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                     <size key="cellSize" width="31" height="18"/>
@@ -10374,12 +10374,12 @@ Gw
                                         <popUpButton verticalHuggingPriority="750" fixedFrame="YES" tag="22" translatesAutoresizingMaskIntoConstraints="NO" id="DyM-Wp-SDQ">
                                             <rect key="frame" x="99" y="288" width="106" height="26"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <popUpButtonCell key="cell" type="push" title="OCP" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" id="Wvx-dX-fwx">
+                                            <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" id="Wvx-dX-fwx">
                                                 <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                                                 <font key="font" metaFont="menu"/>
                                                 <menu key="menu" id="HT0-tM-nVe">
                                                     <items>
-                                                        <menuItem title="OCP" state="on" id="mFu-mt-mFq"/>
+                                                        <menuItem title="OCP" id="mFu-mt-mFq"/>
                                                         <menuItem title="condoms" id="6lK-fJ-aCd"/>
                                                     </items>
                                                 </menu>
@@ -10921,7 +10921,7 @@ Gw
                                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                             </textFieldCell>
                                                         </textField>
-                                                        <textField verticalHuggingPriority="750" ambiguous="YES" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wAK-dR-NQb">
+                                                        <textField verticalHuggingPriority="750" ambiguous="YES" tag="73" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wAK-dR-NQb">
                                                             <rect key="frame" x="119" y="7" width="50" height="22"/>
                                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="" drawsBackground="YES" id="Q5r-DT-5Zn">
                                                                 <font key="font" metaFont="system"/>
@@ -11014,7 +11014,7 @@ Gw
                                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                             </textFieldCell>
                                                         </textField>
-                                                        <textField verticalHuggingPriority="750" ambiguous="YES" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YT2-HM-qzs">
+                                                        <textField verticalHuggingPriority="750" ambiguous="YES" tag="74" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YT2-HM-qzs">
                                                             <rect key="frame" x="100" y="7" width="50" height="22"/>
                                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="" drawsBackground="YES" id="65a-q3-KWr">
                                                                 <font key="font" metaFont="system"/>
@@ -11107,7 +11107,7 @@ Gw
                                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                             </textFieldCell>
                                                         </textField>
-                                                        <textField verticalHuggingPriority="750" ambiguous="YES" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Sp-gV-Y1i">
+                                                        <textField verticalHuggingPriority="750" ambiguous="YES" tag="75" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Sp-gV-Y1i">
                                                             <rect key="frame" x="108" y="7" width="50" height="22"/>
                                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="" drawsBackground="YES" id="FC3-ku-1DE">
                                                                 <font key="font" metaFont="system"/>
@@ -11213,7 +11213,7 @@ Gw
                                                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                     </textFieldCell>
                                                 </textField>
-                                                <comboBox verticalHuggingPriority="750" ambiguous="YES" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Hp-tM-1jN">
+                                                <comboBox verticalHuggingPriority="750" ambiguous="YES" tag="78" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Hp-tM-1jN">
                                                     <rect key="frame" x="90" y="-4" width="65" height="26"/>
                                                     <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" completes="NO" numberOfVisibleItems="5" id="JRU-9L-ZVH">
                                                         <font key="font" metaFont="system"/>
@@ -11236,7 +11236,7 @@ Gw
                                                 <real value="3.4028234663852886e+38"/>
                                             </customSpacing>
                                         </stackView>
-                                        <textField verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8jy-xt-Gzi">
+                                        <textField verticalHuggingPriority="750" fixedFrame="YES" tag="72" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8jy-xt-Gzi">
                                             <rect key="frame" x="40" y="304" width="458" height="22"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="tG0-T6-TWo">
@@ -11257,7 +11257,7 @@ Gw
                                                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                     </textFieldCell>
                                                 </textField>
-                                                <comboBox verticalHuggingPriority="750" ambiguous="YES" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nwn-uo-Nhs">
+                                                <comboBox verticalHuggingPriority="750" ambiguous="YES" tag="79" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nwn-uo-Nhs">
                                                     <rect key="frame" x="100" y="-4" width="65" height="26"/>
                                                     <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" completes="NO" numberOfVisibleItems="5" id="csi-OM-A7P">
                                                         <font key="font" metaFont="system"/>
@@ -11292,7 +11292,7 @@ Gw
                                                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                     </textFieldCell>
                                                 </textField>
-                                                <comboBox verticalHuggingPriority="750" ambiguous="YES" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LSA-cT-msA">
+                                                <comboBox verticalHuggingPriority="750" ambiguous="YES" tag="80" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LSA-cT-msA">
                                                     <rect key="frame" x="128" y="-4" width="65" height="26"/>
                                                     <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" completes="NO" numberOfVisibleItems="5" id="niJ-Pg-lrw">
                                                         <font key="font" metaFont="system"/>
@@ -11327,7 +11327,7 @@ Gw
                                                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                     </textFieldCell>
                                                 </textField>
-                                                <comboBox verticalHuggingPriority="750" ambiguous="YES" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fyr-29-OPc">
+                                                <comboBox verticalHuggingPriority="750" ambiguous="YES" tag="77" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fyr-29-OPc">
                                                     <rect key="frame" x="71" y="-4" width="65" height="26"/>
                                                     <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" completes="NO" numberOfVisibleItems="5" id="bgq-7Z-VYX">
                                                         <font key="font" metaFont="system"/>
@@ -11350,7 +11350,7 @@ Gw
                                                 <real value="3.4028234663852886e+38"/>
                                             </customSpacing>
                                         </stackView>
-                                        <textField verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hXE-MQ-cDu">
+                                        <textField verticalHuggingPriority="750" fixedFrame="YES" tag="82" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hXE-MQ-cDu">
                                             <rect key="frame" x="136" y="36" width="362" height="40"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="Z3B-R0-6V4">
@@ -11371,7 +11371,7 @@ Gw
                                                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                     </textFieldCell>
                                                 </textField>
-                                                <comboBox verticalHuggingPriority="750" ambiguous="YES" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2GK-ff-BHL">
+                                                <comboBox verticalHuggingPriority="750" ambiguous="YES" tag="81" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2GK-ff-BHL">
                                                     <rect key="frame" x="114" y="-4" width="65" height="26"/>
                                                     <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" completes="NO" numberOfVisibleItems="5" id="o0c-81-kMv">
                                                         <font key="font" metaFont="system"/>
@@ -11394,7 +11394,7 @@ Gw
                                                 <real value="3.4028234663852886e+38"/>
                                             </customSpacing>
                                         </stackView>
-                                        <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xaX-Wu-94j">
+                                        <button fixedFrame="YES" tag="71" translatesAutoresizingMaskIntoConstraints="NO" id="xaX-Wu-94j">
                                             <rect key="frame" x="130" y="332" width="40" height="18"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="check" title="No" bezelStyle="regularSquare" imagePosition="left" inset="2" id="06k-QX-3W1">
@@ -11402,7 +11402,7 @@ Gw
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
                                         </button>
-                                        <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MWD-Ok-uan">
+                                        <button fixedFrame="YES" tag="70" translatesAutoresizingMaskIntoConstraints="NO" id="MWD-Ok-uan">
                                             <rect key="frame" x="82" y="332" width="44" height="18"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="check" title="Yes" bezelStyle="regularSquare" imagePosition="left" inset="2" id="kf6-dT-jVV">
@@ -11449,7 +11449,7 @@ Gw
                                                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                     </textFieldCell>
                                                 </textField>
-                                                <comboBox verticalHuggingPriority="750" ambiguous="YES" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7ls-YW-TYi">
+                                                <comboBox verticalHuggingPriority="750" ambiguous="YES" tag="76" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7ls-YW-TYi">
                                                     <rect key="frame" x="87" y="-4" width="65" height="26"/>
                                                     <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" completes="NO" numberOfVisibleItems="5" id="b2x-Nu-e4o">
                                                         <font key="font" metaFont="system"/>
@@ -11480,6 +11480,7 @@ Gw
                     <connections>
                         <outlet property="firstBox" destination="hbS-55-Mm9" id="I4v-OW-haS"/>
                         <outlet property="fxBox" destination="yEc-ub-5zz" id="17J-Jq-mzh"/>
+                        <outlet property="otherCancerView" destination="UTJ-4g-oO4" id="tm7-ir-Pig"/>
                         <outlet property="thirdBox" destination="W1J-ak-hUM" id="uLc-k0-hXe"/>
                         <outlet property="wweTabView" destination="Qht-6T-cPy" id="MgD-ub-udY"/>
                     </connections>

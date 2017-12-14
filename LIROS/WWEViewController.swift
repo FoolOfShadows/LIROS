@@ -15,17 +15,33 @@ class WWEViewController: NSViewController {
 	@IBOutlet weak var fxBox: NSBox!
 	@IBOutlet weak var thirdBox: NSBox!
 	
+	@IBOutlet weak var otherCancerView: NSTextField!
+	
 	override func viewDidLoad() {
         super.viewDidLoad()
-        // Do view setup here.
+        setUpMenuItemsForButtonsIn(wweTabView)
     }
     
 	@IBAction func clearWWETab(_ sender: Any) {
 		wweTabView.clearControllers()
+		setUpMenuItemsForButtonsIn(wweTabView)
+		WellWomanExam.fxOther = String()
 	}
 	
 	
 	@IBAction func processWWETab(_ sender: Any) {
+		if !otherCancerView.stringValue.isEmpty {
+			WellWomanExam.fxOther = " (\(otherCancerView.stringValue))"
+		}
+		
+		var finalResults = [String]()
+		finalResults.append(WellWomanExam().processWWEQuestionsFrom(getButtonsIn(view: firstBox)))
+		finalResults.append(WellWomanExam().processFxMatricesData(getMatrixInfoFrom(fxBox)))
+		finalResults.append(WellWomanExam().processWWEQuestionsFrom(getButtonsIn(view: thirdBox)))
+		
+		NSPasteboard.general.clearContents()
+		NSPasteboard.general.setString(finalResults.joined(separator: "\n"), forType: .string)
+		print(finalResults.joined(separator: "\n"))
 	}
 	
 	func getMatrixInfoFrom(_ view: NSView) -> [(matrix:Int, selections:[Int])] {
@@ -37,8 +53,20 @@ class WWEViewController: NSViewController {
 				results.append((matrix:matrix.tag, selections:selected))
 			}
 		}
-		return results
+		//print("getMatrixInfoFrom: \(results)")
+		return results.sorted(by: {$0.matrix < $1.matrix})
 	}
 	
+	func setUpMenuItemsForButtonsIn(_ view: NSView) {
+		for item in view.subviews {
+			if item is NSPopUpButton {
+				(item as! NSPopUpButton).clearPopUpButton(menuItems: WellWomanExam().getListItemsForID(item.tag))
+			} else if item is NSComboBox {
+				(item as! NSComboBox).clearComboBox(menuItems: WellWomanExam().getListItemsForID(item.tag))
+			} else if item is NSView {
+				setUpMenuItemsForButtonsIn(item)
+			}
+		}
+	}
 	
 }
