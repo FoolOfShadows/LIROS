@@ -17,6 +17,8 @@ class WWEViewController: NSViewController {
 	
 	@IBOutlet weak var otherCancerView: NSTextField!
 	
+	let nc = NotificationCenter.default
+	
 	override func viewDidLoad() {
         super.viewDidLoad()
         setUpMenuItemsForButtonsIn(wweTabView)

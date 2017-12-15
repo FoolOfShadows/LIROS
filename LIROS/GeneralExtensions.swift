@@ -168,3 +168,11 @@ func getStringsForButtonsIn(view: NSView) -> [String]{
     }
     return results
 }
+
+func processAndContinue() {
+	let apps = NSRunningApplication.runningApplications(withBundleIdentifier: "com.apple.TextEdit")
+	if let mainAPP = apps.first {
+		mainAPP.activate(options: .activateIgnoringOtherApps)
+	}
+}
+

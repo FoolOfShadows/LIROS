@@ -26,6 +26,8 @@ class LabsViewController: NSViewController {
 	//Create an array of the tag number and string value for the fields in the lab box
 	var labFields:[(Int, String?)] { return getTextfieldsIn(labBox)}
 	
+	let nc = NotificationCenter.default
+	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		//Set up the choices for the dx comboboxes in the lab box

@@ -8,6 +8,8 @@
 
 import Cocoa
 
+
+
 class ROSViewController: NSViewController {
 	
 	@IBOutlet weak var rosView: NSView!
@@ -30,12 +32,15 @@ class ROSViewController: NSViewController {
 	var cardioList:(sectionName: String, list: [(title:String, state:Int)]) {return ("CARDIO", returnTitleAndStateFrom(12))}
 	var dermList:(sectionName: String, list: [(title:String, state:Int)]) {return ("DERM", returnTitleAndStateFrom(13))}
 	
+
+	let nc = NotificationCenter.default
+	
     override func viewDidLoad() {
         super.viewDidLoad()
         rosView.clearControllers()
     }
     
-	@IBAction func processROS(_ sender: NSButton) {
+	@IBAction func processROS(_ sender: Any) {
 		let results = processROSForm([genList, psychList, eyeList, heentList, cardioList, respList, giList, guList, endoList, neuroList, mskList, hemoList, dermList])
 		
 		NSPasteboard.general.clearContents()
@@ -48,6 +53,13 @@ class ROSViewController: NSViewController {
 	
 	@IBAction func clearROS(_ sender: NSButton) {
 		rosView.clearControllers()
+	}
+	
+	@IBAction func processAndContinueToHPI(_ sender: Any) {
+		processROS(self)
+		TrackingTabs.newTab = 1
+		nc.post(name: NSNotification.Name("SwitchTabs"), object: nil)
+		processAndContinue()
 	}
 	
 	func getListOfButtons(_ view:NSView) -> [NSButton] {

@@ -21,6 +21,7 @@ class HPIViewController: NSViewController {
 	//@IBOutlet weak var onsetView: NSTextField!
 	@IBOutlet weak var phlegmColorCombo: NSComboBox!
 	
+	let nc = NotificationCenter.default
 	
 	override func viewDidLoad() {
         super.viewDidLoad()
@@ -115,5 +116,12 @@ class HPIViewController: NSViewController {
 			pasteBoard.setString(finalArray.joined(separator: "\n"), forType: NSPasteboard.PasteboardType.string)
 		}
 		
+	}
+	
+	@IBAction func processHPIAndContinue(_ sender: Any) {
+		processHPI(self)
+		TrackingTabs.newTab = 2
+		nc.post(name: NSNotification.Name("SwitchTabs"), object: nil)
+		processAndContinue()
 	}
 }

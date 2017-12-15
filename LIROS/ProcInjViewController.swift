@@ -31,6 +31,7 @@ class ProcInjViewController: NSViewController, NSTextFieldDelegate {
 	
 	@IBOutlet var samplesView: NSTextView!
 	
+	let nc = NotificationCenter.default
 	
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -23,7 +23,7 @@ class RadRefVewController: NSViewController {
 	@IBOutlet weak var refReasonView: NSTextField!
 	@IBOutlet weak var refOrdersView: NSTextField!
 	
-	
+	let nc = NotificationCenter.default
 	
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -686,20 +686,20 @@
             </objects>
             <point key="canvasLocation" x="12" y="210"/>
         </scene>
-        <!--Tab View Controller-->
+        <!--Master Tab View Controller-->
         <scene sceneID="iEW-qD-dHv">
             <objects>
-                <tabViewController selectedTabViewItemIndex="8" id="YWi-ss-dRg" customClass="TabViewController" customModule="LIROS" customModuleProvider="target" sceneMemberID="viewController">
+                <tabViewController selectedTabViewItemIndex="0" id="YWi-ss-dRg" customClass="MasterTabViewController" customModule="LIROS" customModuleProvider="target" sceneMemberID="viewController">
                     <tabViewItems>
-                        <tabViewItem label="Doctor" id="X6P-b6-5SQ"/>
-                        <tabViewItem label="Labs" id="3gT-wQ-RcD"/>
-                        <tabViewItem label="Rad/Ref" identifier="" id="FWY-z3-N0M"/>
-                        <tabViewItem label="HPI" id="nfm-k2-EyC"/>
                         <tabViewItem label="Systems Review" identifier="" id="WNx-6q-hJS"/>
-                        <tabViewItem id="J8e-tH-Alc" userLabel="Pain"/>
+                        <tabViewItem label="HPI" id="nfm-k2-EyC"/>
                         <tabViewItem id="gAr-3s-25H" userLabel="DM"/>
+                        <tabViewItem id="J8e-tH-Alc" userLabel="Pain"/>
+                        <tabViewItem label="Labs" id="3gT-wQ-RcD"/>
                         <tabViewItem id="nfq-ZO-UP3" userLabel="Procedures &amp; Injections"/>
                         <tabViewItem id="QKc-Z1-IWB" userLabel="WWE"/>
+                        <tabViewItem label="Rad/Ref" identifier="" id="FWY-z3-N0M"/>
+                        <tabViewItem label="Doctor" id="X6P-b6-5SQ"/>
                     </tabViewItems>
                     <tabView key="tabView" misplaced="YES" type="noTabsNoBorder" id="qjC-Ed-vDh">
                         <rect key="frame" x="0.0" y="0.0" width="1002" height="737"/>
@@ -712,16 +712,17 @@
                     </tabView>
                     <connections>
                         <outlet property="MainTabView" destination="qjC-Ed-vDh" id="6Ot-Bp-y6u"/>
+                        <outlet property="mainTabView" destination="qjC-Ed-vDh" id="iti-Bh-HNL"/>
                         <outlet property="tabView" destination="qjC-Ed-vDh" id="bPO-m3-sJ9"/>
-                        <segue destination="9li-Ef-vNd" kind="relationship" relationship="tabItems" id="6yv-wk-cbC"/>
-                        <segue destination="2Uj-H7-Elr" kind="relationship" relationship="tabItems" id="nmP-A8-ZFa"/>
-                        <segue destination="0hJ-0e-fq4" kind="relationship" relationship="tabItems" id="X0d-ux-Zbz"/>
-                        <segue destination="mCl-Cg-YdW" kind="relationship" relationship="tabItems" id="Osx-YW-rc6"/>
                         <segue destination="euD-VM-Evz" kind="relationship" relationship="tabItems" id="M9g-wN-4fs"/>
-                        <segue destination="E90-8K-JKr" kind="relationship" relationship="tabItems" id="ykl-rE-RXG"/>
+                        <segue destination="mCl-Cg-YdW" kind="relationship" relationship="tabItems" id="Osx-YW-rc6"/>
                         <segue destination="S7A-4v-TYW" kind="relationship" relationship="tabItems" id="HXJ-xe-cxQ"/>
+                        <segue destination="E90-8K-JKr" kind="relationship" relationship="tabItems" id="ykl-rE-RXG"/>
+                        <segue destination="2Uj-H7-Elr" kind="relationship" relationship="tabItems" id="nmP-A8-ZFa"/>
                         <segue destination="jYK-Fu-34M" kind="relationship" relationship="tabItems" id="YTF-7r-wdd"/>
                         <segue destination="kEH-4v-Vs4" kind="relationship" relationship="tabItems" id="hFQ-6r-KEY"/>
+                        <segue destination="0hJ-0e-fq4" kind="relationship" relationship="tabItems" id="X0d-ux-Zbz"/>
+                        <segue destination="9li-Ef-vNd" kind="relationship" relationship="tabItems" id="6yv-wk-cbC"/>
                     </connections>
                 </tabViewController>
                 <customObject id="lQc-ch-FD7" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
@@ -2162,50 +2163,10 @@ periods</string>
                                     <font key="font" metaFont="system" size="14"/>
                                 </buttonCell>
                             </button>
-                            <button hidden="YES" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vG1-R4-yAs">
-                                <rect key="frame" x="778" y="69" width="89" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="push" title="Test ON" bezelStyle="rounded" alignment="center" enabled="NO" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="xg0-zc-zG7">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
-                            </button>
-                            <button hidden="YES" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Iiz-nd-dWQ">
-                                <rect key="frame" x="882" y="69" width="106" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="push" title="Test Mixed" bezelStyle="rounded" alignment="center" enabled="NO" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="6Zi-vF-y8p">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
-                            </button>
                             <button fixedFrame="YES" tag="6" translatesAutoresizingMaskIntoConstraints="NO" id="W0D-uS-7yl">
                                 <rect key="frame" x="397" y="501" width="173" height="18"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="check" title="Tinnitus (ringing ears)" bezelStyle="regularSquare" imagePosition="left" allowsMixedState="YES" inset="2" id="1Sf-VK-0Ko" customClass="RedGreenCheckbox" customModule="LIROS" customModuleProvider="target">
-                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                                    <font key="font" metaFont="system" size="14"/>
-                                </buttonCell>
-                            </button>
-                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f7R-8X-o47">
-                                <rect key="frame" x="619" y="80" width="55" height="18"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="check" title=" - No" bezelStyle="regularSquare" imagePosition="left" enabled="NO" allowsMixedState="YES" inset="2" id="c36-mn-lwS" customClass="RedGreenCheckbox" customModule="LIROS" customModuleProvider="target">
-                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                                    <font key="font" metaFont="system" size="14"/>
-                                </buttonCell>
-                            </button>
-                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mmJ-2p-Ugz">
-                                <rect key="frame" x="619" y="40" width="132" height="18"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="check" title=" - Specifically No" bezelStyle="regularSquare" imagePosition="left" enabled="NO" state="on" allowsMixedState="YES" inset="2" id="xGI-rT-Fnt" customClass="RedGreenCheckbox" customModule="LIROS" customModuleProvider="target">
-                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                                    <font key="font" metaFont="system" size="14"/>
-                                </buttonCell>
-                            </button>
-                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YKn-lN-kBY">
-                                <rect key="frame" x="619" y="60" width="59" height="18"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="check" title=" - Yes" bezelStyle="regularSquare" imagePosition="left" enabled="NO" state="mixed" allowsMixedState="YES" inset="2" id="4Pd-NB-1KT" customClass="RedGreenCheckbox" customModule="LIROS" customModuleProvider="target">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system" size="14"/>
                                 </buttonCell>
@@ -2756,7 +2717,7 @@ periods</string>
                                 </subviews>
                             </customView>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sM3-Xa-BC7">
-                                <rect key="frame" x="778" y="13" width="73" height="32"/>
+                                <rect key="frame" x="825" y="13" width="73" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="push" title="Clear" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="qEH-Cf-V6H">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -2776,6 +2737,41 @@ periods</string>
                                 <connections>
                                     <action selector="processROS:" target="euD-VM-Evz" id="Cxz-qf-18y"/>
                                 </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JDz-mM-ZKN">
+                                <rect key="frame" x="660" y="13" width="160" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Process &amp; Continue" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="PqB-nU-1Ci">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="processAndContinueToHPI:" target="euD-VM-Evz" id="V7c-3R-7Ha"/>
+                                </connections>
+                            </button>
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f7R-8X-o47">
+                                <rect key="frame" x="852" y="99" width="55" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="check" title=" - No" bezelStyle="regularSquare" imagePosition="left" enabled="NO" allowsMixedState="YES" inset="2" id="c36-mn-lwS" customClass="RedGreenCheckbox" customModule="LIROS" customModuleProvider="target">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system" size="14"/>
+                                </buttonCell>
+                            </button>
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mmJ-2p-Ugz">
+                                <rect key="frame" x="852" y="59" width="132" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="check" title=" - Specifically No" bezelStyle="regularSquare" imagePosition="left" enabled="NO" state="on" allowsMixedState="YES" inset="2" id="xGI-rT-Fnt" customClass="RedGreenCheckbox" customModule="LIROS" customModuleProvider="target">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system" size="14"/>
+                                </buttonCell>
+                            </button>
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YKn-lN-kBY">
+                                <rect key="frame" x="852" y="79" width="59" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="check" title=" - Yes" bezelStyle="regularSquare" imagePosition="left" enabled="NO" state="mixed" allowsMixedState="YES" inset="2" id="4Pd-NB-1KT" customClass="RedGreenCheckbox" customModule="LIROS" customModuleProvider="target">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system" size="14"/>
+                                </buttonCell>
                             </button>
                         </subviews>
                     </view>
@@ -5951,6 +5947,17 @@ or bending</string>
                                     </subviews>
                                 </view>
                             </box>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m9G-5k-bDb">
+                                <rect key="frame" x="638" y="29" width="160" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Process &amp; Continue" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Ac2-Od-WZm">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="processHPIAndContinue:" target="mCl-Cg-YdW" id="ihJ-nT-YOc"/>
+                                </connections>
+                            </button>
                         </subviews>
                     </view>
                     <connections>
@@ -5999,14 +6006,6 @@ or bending</string>
                                 <connections>
                                     <action selector="processPain:" target="E90-8K-JKr" id="z5e-mi-PlR"/>
                                 </connections>
-                            </button>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8cF-H4-Y6y">
-                                <rect key="frame" x="554" y="13" width="160" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="push" title="Process &amp; Continue" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Ga2-Im-HZs">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
                             </button>
                             <box autoresizesSubviews="NO" fixedFrame="YES" borderType="line" title="Location" translatesAutoresizingMaskIntoConstraints="NO" id="USC-YU-vtJ">
                                 <rect key="frame" x="17" y="564" width="968" height="137"/>
@@ -7176,6 +7175,17 @@ or bending</string>
                                     </subviews>
                                 </view>
                             </box>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8cF-H4-Y6y">
+                                <rect key="frame" x="661" y="13" width="160" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Process &amp; Continue" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Ga2-Im-HZs">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="processPainAndContinue:" target="E90-8K-JKr" id="xgc-8v-Nd0"/>
+                                </connections>
+                            </button>
                         </subviews>
                     </view>
                     <connections>
@@ -8243,6 +8253,9 @@ or bending</string>
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="processDMAndContinue:" target="S7A-4v-TYW" id="Puk-3Z-6zX"/>
+                                </connections>
                             </button>
                         </subviews>
                     </view>

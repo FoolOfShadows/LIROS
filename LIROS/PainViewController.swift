@@ -36,6 +36,7 @@ class PainViewController: NSViewController {
 	@IBOutlet weak var qolMeasurePopup: NSPopUpButton!
 	@IBOutlet weak var qolCommentsView: NSTextField!
 	
+	let nc = NotificationCenter.default
 	
 	override func viewDidLoad() {
         super.viewDidLoad()
@@ -74,6 +75,13 @@ class PainViewController: NSViewController {
 		
 		print(filteredResults.joined(separator: "\n"))
 
+	}
+	
+	@IBAction func processPainAndContinue(_ sender: Any) {
+		processPain(self)
+		TrackingTabs.newTab = 4
+		nc.post(name: NSNotification.Name("SwitchTabs"), object: nil)
+		processAndContinue()
 	}
 	
 	func getDurationInfo() -> String {

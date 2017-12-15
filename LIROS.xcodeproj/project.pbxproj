@@ -28,6 +28,7 @@
 		797A2D271FC5E9E4002F8396 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797A2D261FC5E9E4002F8396 /* TabViewController.swift */; };
 		798A06B61FD717EB00B81A52 /* DMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798A06B51FD717EB00B81A52 /* DMViewController.swift */; };
 		798A06B81FD717F900B81A52 /* DMModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798A06B71FD717F900B81A52 /* DMModel.swift */; };
+		799057441FE4251A00FA4CEA /* MasterTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799057431FE4251A00FA4CEA /* MasterTabViewController.swift */; };
 		79A2092F1FE1718B000D2628 /* WWEViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A2092E1FE1718B000D2628 /* WWEViewController.swift */; };
 		79A209311FE17199000D2628 /* WWEModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A209301FE17199000D2628 /* WWEModel.swift */; };
 		79B226C01FAB557F0035C703 /* LabPrintViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B226BF1FAB557F0035C703 /* LabPrintViewController.swift */; };
@@ -62,6 +63,7 @@
 		797A2D261FC5E9E4002F8396 /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
 		798A06B51FD717EB00B81A52 /* DMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMViewController.swift; sourceTree = "<group>"; };
 		798A06B71FD717F900B81A52 /* DMModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMModel.swift; sourceTree = "<group>"; };
+		799057431FE4251A00FA4CEA /* MasterTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterTabViewController.swift; sourceTree = "<group>"; };
 		79A2092E1FE1718B000D2628 /* WWEViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWEViewController.swift; sourceTree = "<group>"; };
 		79A209301FE17199000D2628 /* WWEModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWEModel.swift; sourceTree = "<group>"; };
 		79B226BF1FAB557F0035C703 /* LabPrintViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabPrintViewController.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 				796248631E95351300AB8361 /* BlackLineClass.swift */,
 				796248671E95369A00AB8361 /* RedGreenCheckbox.swift */,
 				79629E6B1FAA49EA001840DE /* PrintView.swift */,
+				799057431FE4251A00FA4CEA /* MasterTabViewController.swift */,
 			);
 			path = LIROS;
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 				7900B99E1FB1F589001C2DB1 /* HPIViewController.swift in Sources */,
 				795132EB1FD9BF8C00BBF5B3 /* ProcInjViewController.swift in Sources */,
 				7962486A1E953D5800AB8361 /* ROSViewController.swift in Sources */,
+				799057441FE4251A00FA4CEA /* MasterTabViewController.swift in Sources */,
 				796248641E95351300AB8361 /* GeneralExtensions.swift in Sources */,
 				79A2092F1FE1718B000D2628 /* WWEViewController.swift in Sources */,
 				79DCEF181FD1CE19004C8066 /* PainModel.swift in Sources */,

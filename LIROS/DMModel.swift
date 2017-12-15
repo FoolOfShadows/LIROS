@@ -134,7 +134,7 @@ func processPlanUsing(_ data:[(Int, String?)]) -> String {
 	
 	for item in data {
 		switch item.0 {
-		case 1: results.append("Patient direced to check blood sugars \(item.1!).")
+		case 1: results.append("Patient directed to check blood sugars \(item.1!).")
 		case 2: results.append("DM shoes prescribed at this visit.")
 		case 3: results.append("DM diet discussed with patient at this visit.")
 		case 4: refResults.append("DM Education")

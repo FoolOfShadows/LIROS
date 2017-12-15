@@ -31,6 +31,7 @@ class DMViewController: NSViewController {
 	
 	@IBOutlet weak var fbsPlanCombo: NSComboBox!
 	
+	let nc = NotificationCenter.default
 	
 	override func viewDidLoad() {
         super.viewDidLoad()
@@ -62,6 +63,13 @@ class DMViewController: NSViewController {
 		NSPasteboard.general.setString(filteredResults.joined(separator: "\n"), forType: .string)
 		
 		print(filteredResults.joined(separator: "\n"))
+	}
+	
+	@IBAction func processDMAndContinue(_ sender: Any) {
+		processDMTab(self)
+		TrackingTabs.newTab = 3
+		nc.post(name: NSNotification.Name("SwitchTabs"), object: nil)
+		processAndContinue()
 	}
 	
 	func clearDiabetesTab() {

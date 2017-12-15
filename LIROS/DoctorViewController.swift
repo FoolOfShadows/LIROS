@@ -20,7 +20,9 @@ class DoctorViewController: NSViewController {
     @IBOutlet weak var medicationView: NSTextField!
     @IBOutlet weak var arthPopup: NSPopUpButton!
     @IBOutlet weak var synvPopup: NSPopUpButton!
-    
+	
+	let nc = NotificationCenter.default
+	
 	func getDataFromView(_ view:NSView) -> [(Int, String?)] {
 		let tagList = getButtonsIn(view: view)
 		return tagList.sorted(by: {$0.0 < $1.0})
