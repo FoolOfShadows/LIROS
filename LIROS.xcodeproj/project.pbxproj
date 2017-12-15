@@ -29,6 +29,7 @@
 		798A06B61FD717EB00B81A52 /* DMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798A06B51FD717EB00B81A52 /* DMViewController.swift */; };
 		798A06B81FD717F900B81A52 /* DMModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798A06B71FD717F900B81A52 /* DMModel.swift */; };
 		799057441FE4251A00FA4CEA /* MasterTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799057431FE4251A00FA4CEA /* MasterTabViewController.swift */; };
+		799057461FE448FB00FA4CEA /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799057451FE448FB00FA4CEA /* Preferences.swift */; };
 		79A2092F1FE1718B000D2628 /* WWEViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A2092E1FE1718B000D2628 /* WWEViewController.swift */; };
 		79A209311FE17199000D2628 /* WWEModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A209301FE17199000D2628 /* WWEModel.swift */; };
 		79B226C01FAB557F0035C703 /* LabPrintViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B226BF1FAB557F0035C703 /* LabPrintViewController.swift */; };
@@ -64,6 +65,7 @@
 		798A06B51FD717EB00B81A52 /* DMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMViewController.swift; sourceTree = "<group>"; };
 		798A06B71FD717F900B81A52 /* DMModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMModel.swift; sourceTree = "<group>"; };
 		799057431FE4251A00FA4CEA /* MasterTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterTabViewController.swift; sourceTree = "<group>"; };
+		799057451FE448FB00FA4CEA /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
 		79A2092E1FE1718B000D2628 /* WWEViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWEViewController.swift; sourceTree = "<group>"; };
 		79A209301FE17199000D2628 /* WWEModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWEModel.swift; sourceTree = "<group>"; };
 		79B226BF1FAB557F0035C703 /* LabPrintViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabPrintViewController.swift; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 				796248671E95369A00AB8361 /* RedGreenCheckbox.swift */,
 				79629E6B1FAA49EA001840DE /* PrintView.swift */,
 				799057431FE4251A00FA4CEA /* MasterTabViewController.swift */,
+				799057451FE448FB00FA4CEA /* Preferences.swift */,
 			);
 			path = LIROS;
 			sourceTree = "<group>";
@@ -234,6 +237,7 @@
 				79629E6C1FAA49EA001840DE /* PrintView.swift in Sources */,
 				798A06B61FD717EB00B81A52 /* DMViewController.swift in Sources */,
 				796248531E952D9600AB8361 /* AppDelegate.swift in Sources */,
+				799057461FE448FB00FA4CEA /* Preferences.swift in Sources */,
 				790B008F1F98F13A0031B190 /* RadRefVewController.swift in Sources */,
 				798A06B81FD717F900B81A52 /* DMModel.swift in Sources */,
 				790B00911F98F2530031B190 /* RadRefModel.swift in Sources */,
