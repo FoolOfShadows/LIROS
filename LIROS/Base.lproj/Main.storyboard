@@ -701,7 +701,7 @@
                         <tabViewItem label="Rad/Ref" identifier="" id="FWY-z3-N0M"/>
                         <tabViewItem label="Doctor" id="X6P-b6-5SQ"/>
                     </tabViewItems>
-                    <tabView key="tabView" misplaced="YES" type="noTabsNoBorder" id="qjC-Ed-vDh">
+                    <tabView key="tabView" identifier="MainTabView" misplaced="YES" type="noTabsNoBorder" id="qjC-Ed-vDh">
                         <rect key="frame" x="0.0" y="0.0" width="1002" height="737"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <font key="font" metaFont="message"/>
@@ -8038,7 +8038,7 @@ or bending</string>
                             <box autoresizesSubviews="NO" fixedFrame="YES" borderType="line" title="Symptoms of High Blood Sugar" translatesAutoresizingMaskIntoConstraints="NO" id="GuJ-yb-xTV">
                                 <rect key="frame" x="344" y="601" width="315" height="96"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <view key="contentView" id="Zs6-Nq-DYJ">
+                                <view key="contentView" identifier="HS Button View" id="Zs6-Nq-DYJ">
                                     <rect key="frame" x="1" y="1" width="313" height="80"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
@@ -8049,6 +8049,9 @@ or bending</string>
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="ifNoThenAllOtherBoxesOff:" target="S7A-4v-TYW" id="gDL-Yc-Tx7"/>
+                                            </connections>
                                         </button>
                                         <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tYK-Ed-T1v">
                                             <rect key="frame" x="16" y="33" width="67" height="18"/>
@@ -8057,6 +8060,9 @@ or bending</string>
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="ifYesThenNoBoxOff:" target="S7A-4v-TYW" id="Kdz-iB-ym3"/>
+                                            </connections>
                                         </button>
                                         <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5IF-dw-q94">
                                             <rect key="frame" x="16" y="11" width="80" height="18"/>
@@ -8065,6 +8071,9 @@ or bending</string>
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="ifYesThenNoBoxOff:" target="S7A-4v-TYW" id="Gcn-Ie-yMm"/>
+                                            </connections>
                                         </button>
                                         <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9en-uH-rGV">
                                             <rect key="frame" x="114" y="54" width="118" height="18"/>
@@ -8073,6 +8082,9 @@ or bending</string>
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="ifYesThenNoBoxOff:" target="S7A-4v-TYW" id="2p3-gw-Vya"/>
+                                            </connections>
                                         </button>
                                         <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Rz-UN-hhB">
                                             <rect key="frame" x="114" y="33" width="135" height="18"/>
@@ -8081,6 +8093,9 @@ or bending</string>
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="ifYesThenNoBoxOff:" target="S7A-4v-TYW" id="QzI-vL-Hgs"/>
+                                            </connections>
                                         </button>
                                         <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bMq-Vj-AEK">
                                             <rect key="frame" x="114" y="11" width="98" height="18"/>
@@ -8089,8 +8104,12 @@ or bending</string>
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="ifYesThenNoBoxOff:" target="S7A-4v-TYW" id="9pc-RS-B8D"/>
+                                            </connections>
                                         </button>
                                     </subviews>
+                                    <accessibility description="HS Button View"/>
                                 </view>
                             </box>
                             <box autoresizesSubviews="NO" fixedFrame="YES" borderType="line" title="Eye Exam" translatesAutoresizingMaskIntoConstraints="NO" id="5iZ-AZ-4m5">
@@ -8186,6 +8205,9 @@ or bending</string>
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="ifNoThenAllOtherBoxesOff:" target="S7A-4v-TYW" id="glm-jB-hp8"/>
+                                            </connections>
                                         </button>
                                         <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RHe-Zz-6RX">
                                             <rect key="frame" x="16" y="55" width="68" height="18"/>
@@ -8194,6 +8216,9 @@ or bending</string>
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="ifYesThenNoBoxOff:" target="S7A-4v-TYW" id="rXu-M6-tWN"/>
+                                            </connections>
                                         </button>
                                         <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cro-JF-h4g">
                                             <rect key="frame" x="16" y="33" width="68" height="18"/>
@@ -8202,6 +8227,9 @@ or bending</string>
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="ifYesThenNoBoxOff:" target="S7A-4v-TYW" id="qOI-BX-vzD"/>
+                                            </connections>
                                         </button>
                                         <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TuE-Wb-d78">
                                             <rect key="frame" x="16" y="12" width="85" height="18"/>
@@ -8210,6 +8238,9 @@ or bending</string>
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="ifYesThenNoBoxOff:" target="S7A-4v-TYW" id="pdH-JN-CRI"/>
+                                            </connections>
                                         </button>
                                         <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ixy-V0-bVm">
                                             <rect key="frame" x="114" y="76" width="85" height="18"/>
@@ -8218,6 +8249,9 @@ or bending</string>
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="ifYesThenNoBoxOff:" target="S7A-4v-TYW" id="pXc-Hb-eWc"/>
+                                            </connections>
                                         </button>
                                         <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AUR-mg-8Fc">
                                             <rect key="frame" x="114" y="55" width="76" height="18"/>
@@ -8226,6 +8260,9 @@ or bending</string>
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="ifYesThenNoBoxOff:" target="S7A-4v-TYW" id="Fv0-0n-aH8"/>
+                                            </connections>
                                         </button>
                                         <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ii6-EM-Wzc">
                                             <rect key="frame" x="114" y="33" width="98" height="18"/>
@@ -8234,6 +8271,9 @@ or bending</string>
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="ifYesThenNoBoxOff:" target="S7A-4v-TYW" id="i1L-Za-ZoN"/>
+                                            </connections>
                                         </button>
                                         <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gsm-EG-Fxz">
                                             <rect key="frame" x="114" y="12" width="80" height="18"/>
@@ -8242,6 +8282,9 @@ or bending</string>
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="ifYesThenNoBoxOff:" target="S7A-4v-TYW" id="5zR-jN-iiY"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                 </view>

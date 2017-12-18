@@ -81,4 +81,24 @@ class DMViewController: NSViewController {
 		uMalbPopup.clearPopUpButton(menuItems: umalbList)
 		fbsPlanCombo.clearComboBox(menuItems: checkingFBSList)
 	}
+	
+	@IBAction func ifNoThenAllOtherBoxesOff(_ sender: NSButton) {
+		if let buttons = sender.superview?.subviews {
+			for button in buttons {
+				if (button as! NSButton).title != sender.title {
+					(button as! NSButton).state = .off
+				}
+			}
+		}
+	}
+	
+	@IBAction func ifYesThenNoBoxOff(_ sender: NSButton) {
+		if let buttons = sender.superview?.subviews {
+			for button in buttons {
+				if (button as! NSButton).title == "No" {
+					(button as! NSButton).state = .off
+				}
+			}
+		}
+	}
 }

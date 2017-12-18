@@ -10,7 +10,7 @@ import Cocoa
 
 
 
-class ROSViewController: NSViewController {
+class ROSViewController: NSTabViewController {
 	
 	@IBOutlet weak var rosView: NSView!
 	
