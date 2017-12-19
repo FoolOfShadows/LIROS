@@ -24,7 +24,8 @@ class MasterTabViewController: NSTabViewController {
 		if let whereFluList = getSectionDataStartingFrom("START WHERE FLU", andEndingWith: "END WHERE FLU") {
 			whereFlu = [""] + whereFluList
 		}
-		if let declinesFluList = getSectionDataStartingFrom("START DECLINES FLU", andEndingWith: "ENDS DECLINES FLU") {
+		if let declinesFluList = getSectionDataStartingFrom("START DECLINES FLU", andEndingWith: "END DECLINES FLU") {
+			print("\n\n\n\(declinesFluList)\n\n\n")
 			declinesFlu = [""] + declinesFluList
 		}
 		

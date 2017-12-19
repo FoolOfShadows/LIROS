@@ -31,7 +31,7 @@ class LabsViewController: NSViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		//Set up the choices for the dx comboboxes in the lab box
-		populateComboboxSelectionsIn(labBox)
+		clearLabs(self)
 	}
 	
 	//Scrapes a view for all the textfields in a view
@@ -54,16 +54,16 @@ class LabsViewController: NSViewController {
 	
 	//Populates the choices of the comboboxes in a view based on matching
 	//the boxes tag with a switch in the LabDxValues struct
-	func populateComboboxSelectionsIn(_ view: NSView/*, Using theStruct: populateComboBoxProtocol*/) {
+	func populateComboboxSelectionsIn(_ view: NSView, Using theStruct: populateComboBoxProtocol) {
 		for item in view.subviews {
 			if let isCombobox = item as? NSComboBox {
-				if let dxSelections = LabDxValues().matchValuesFrom(isCombobox.tag) {
+				if let dxSelections = theStruct.matchValuesFrom(isCombobox.tag) {
 					isCombobox.removeAllItems()
 					isCombobox.addItems(withObjectValues: dxSelections)
 					isCombobox.selectItem(at: 0)
 				}
 			} else if item is NSView {
-				populateComboboxSelectionsIn(view)
+				populateComboboxSelectionsIn(item, Using: theStruct)
 			}
 		}
 		
@@ -71,7 +71,9 @@ class LabsViewController: NSViewController {
 	
 	@IBAction func clearLabs(_ sender: Any) {
 		labView.clearControllers()
-		populateComboboxSelectionsIn(labBox)
+		populateComboboxSelectionsIn(labBox, Using: LabDxValues())
+		print("\n\n\n\(declinesFlu)\n\n\n")
+		populateComboboxSelectionsIn(fluBox, Using: FluComboboxValues())
 	}
 	
 	@IBAction func select90DayLabs(_ sender: Any) {
