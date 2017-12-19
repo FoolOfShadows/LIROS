@@ -8,6 +8,8 @@
 
 import Foundation
 
+var fluTypeList = ["","Fluarix", "FluzoneQuad", "Fluzone Hi Dose"]
+
 struct ProcInjModel {
 	let earLavageList = ["", "right ear", "left ear", "both ears"]
 	let nebulizerList = ["", "Albuterol", "Atrovent", "Duoneb"]
@@ -23,7 +25,7 @@ struct ProcInjModel {
 		case 17: return /*upperArmSCOnlyList*/ ["", "R Upper Arm SC", "L Upper Arm SC"]
 		case 9: return /*jointInjList*/ ["", "R Knee", "L Knee", "Both Knees", "R Shoulder", "L Shoulder", "Both Shoulders", "R Elbow", "L Elbow", "Both Elbows"]
 		case 18: return /*kneeInjList*/ ["", "R Knee", "L Knee", "Both Knees"]
-		case 31: return /*fluTypeList*/ ["","Fluarix", "FluzoneQuad", "Fluzone Hi Dose"]
+		case 31: return /*fluTypeList*/ fluTypeList
 		case 35: return /*rocAmountList*/ ["", "1 gm/2.1 ml", "500 mg/1 ml"]
 		case 26: return /*torAmountList*/ ["", "30", "60"]
 		case 20: return /*hepVacList*/ ["", "A1", "A2", "B1", "B2", "B3", "TRx1", "TRx2", "TRx3"]

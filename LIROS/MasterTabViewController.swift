@@ -14,8 +14,15 @@ class MasterTabViewController: NSTabViewController {
         super.viewDidLoad()
 		let nc = NotificationCenter.default
 		nc.addObserver(self, selector: #selector(switchToTab), name: Notification.Name("SwitchTabs"), object: nil)
-        // Do view setup here.
-    }
+
+		if let fluList = getSectionDataStartingFrom("START FLU", andEndingWith: "END FLU") {
+			fluTypeList = [""] + fluList
+		}
+		if let medsList = getSectionDataStartingFrom("START COMMON MEDS", andEndingWith: "END COMMON MEDS") {
+			commonMedsList = [""] + medsList
+		}
+	}
+	
 	
 	@objc func switchToTab() {
 		mainTabView.selectTabViewItem(at: TrackingTabs.newTab)
@@ -36,14 +43,13 @@ struct TrackingTabs {
 }
 
 
-func getSectionDataFrom(_ rawData:String, delimiters:(start:String, stop:String)) -> [String] {
+func getSectionDataStartingFrom(_ start:String, andEndingWith stop:String) -> [String]? {
 	var returnData = [String]()
-	guard let rawData = getPrefDataFrom("\(NSHomeDirectory())/WPCMSharedFiles/WPCM Software Bits/00 CAUTION - Data Files/LIROSPrefFile.txt") else {return [String]()}
-	if let sectionData = rawData.findRegexMatchBetween(delimiters.start, and: delimiters.stop) {
-		returnData = sectionData.components(separatedBy: "\n")
+	guard let rawData = getPrefDataFrom("\(NSHomeDirectory())/WPCMSharedFiles/WPCM Software Bits/00 CAUTION - Data Files/LIROSPrefFile.txt") else {return nil}
+	if let sectionData = rawData.findRegexMatchBetween(start, and: stop) {
+		let cleanData = sectionData.removeWhiteSpace()
+		returnData = cleanData.components(separatedBy: "\n")
 	}
-	
-	
 	return returnData
 }
 

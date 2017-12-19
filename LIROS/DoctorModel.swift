@@ -7,7 +7,7 @@
 //
 
 import Foundation
-let commonMedsList = ["", "Amoxicillin 500 mg —-> 1 by mouth three times daily x 10 days, dispense # 30, no refill", "Amoxicilin 875 mg —-> 1 by mouth twice daily x 10 days, no refill", "Augmentin 875/125 mg —-> 1 by mouth twice daily x 10 days,", "Levaquin (Levoflaxacin) 750 mg —-> 1 by mouth once daily x 5 days, no refill", "Levaquin (Levoflaxacin) 500 mg —-> 1 by mouth once daily x 7 days, No refill", "Zithromax Z pack 5 day = Azithromycin 250 mg —-> 2 po at once on 1st day, then 1 by mouth once daily x 4 more days, # 6 tabs, no Refill", "Bactrim DS (Tirmethaprim/Sulfamethoxizole) 800/160 mg —-> 1 by mouth twice daily x 10 days", "Cleocin (Clindamycin) 150 mg —->", "Cleocin (Clindamycin) 300 mg", "Keflex (Cephalexin) 500 mg", "Omnicef (Cefdinir) 300 mg", "Prednisone 5 day", "Prednisone Taper", "Medial DosePack"]
+var commonMedsList = ["", "Amoxicillin 500 mg —-> 1 by mouth three times daily x 10 days, dispense # 30, no refill", "Amoxicilin 875 mg —-> 1 by mouth twice daily x 10 days, no refill", "Augmentin 875/125 mg —-> 1 by mouth twice daily x 10 days,", "Levaquin (Levoflaxacin) 750 mg —-> 1 by mouth once daily x 5 days, no refill", "Levaquin (Levoflaxacin) 500 mg —-> 1 by mouth once daily x 7 days, No refill", "Zithromax Z pack 5 day = Azithromycin 250 mg —-> 2 po at once on 1st day, then 1 by mouth once daily x 4 more days, # 6 tabs, no Refill", "Bactrim DS (Tirmethaprim/Sulfamethoxizole) 800/160 mg —-> 1 by mouth twice daily x 10 days", "Cleocin (Clindamycin) 150 mg —->", "Cleocin (Clindamycin) 300 mg", "Keflex (Cephalexin) 500 mg", "Omnicef (Cefdinir) 300 mg", "Prednisone 5 day", "Prednisone Taper", "Medial DosePack"]
 let jointList = ["", "Right Knee", "Left Knee", "Both Knees", "Right Shoulder", "Left Shoulder", "Both Shoulders", "Right Elbow", "Left Elbow", "Both Elbows"]
 let kneeList = ["", "Right Knee", "Left Knee", "Both Knees"]
 
@@ -101,28 +101,6 @@ struct Lab:StructsWithDescriptionOutput {
 }
 
 struct Procedures /*:StructsWithDescriptionOutput*/ {
-//	func getOutputFor(_ id:Int) -> String? {
-//		switch id {
-//		case 1: return "Digital rectal exam"
-//		case 2: return "Hemoccult Stool cards x 3 given for colon cancer screening."
-//		case 3: return "Incision and drainage of abscess, consent signed"
-//		case 4: return "EKG, consent signed"
-//		case 10: return "Cryo x "
-//		case 11: return "Skin tag removal x "
-//		case 12: return "Suture/staple removal x "
-//		default: return nil
-//		}
-//	}
-//
-//	func processSectionData(_ data:[(Int, String?)]) -> String {
-//		var finalResult = String()
-//		let resultsStrings = getDescriptionOfItem(data, fromStruct: self) ?? [String]()
-//
-//		if !resultsStrings.isEmpty {
-//			finalResult = "Office procedure(s) performed:\n\(resultsStrings.joined(separator: "\n"))"
-//		}
-//		return finalResult
-//	}
 	
 	func processProceduresUsing(_ data:[(Int, String?)]) -> String {
 		var resultArray = [String]()
