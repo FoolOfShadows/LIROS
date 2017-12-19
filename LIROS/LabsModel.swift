@@ -8,6 +8,16 @@
 
 import Foundation
 
+let headerInfo = ("Whelchel Primary Care Medicine" + "\n" + "401 East Pinecrest, Marshall, TX  75670" + "\n" + "CPL Client #: 36686" + "\n" + "Phone: 903-935-7101     Fax: 903-935-7043")
+
+var whereFlu = [""]
+var declinesFlu = [""]
+
+protocol populateComboBoxProtocol {
+	func matchValuesFrom(_ id:Int) -> [String]?
+}
+
+
 struct Labs {
 	func getOutputFor(_ id:Int) -> String? {
 		switch id {
@@ -93,13 +103,17 @@ struct Labs {
 	}
 	
 	func getFluShotStatusFrom(_ data: [(Int, String?)]) -> String? {
-		var pharmDate = ""
-		var employerDate = ""
+		var declineReason = ""
+		var willGetAt = ""
+		var didGetAt = ""
+		var didGetOn = ""
 		
 		for item in data {
 			switch item.0 {
-			case 10: pharmDate = item.1!
-			case 11: employerDate = item.1!
+			case 10: declineReason = item.1!
+			case 11: willGetAt = item.1!
+			case 12: didGetAt = item.1!
+			case 15: didGetOn = item.1!
 			default: continue
 			}
 		}
@@ -108,11 +122,9 @@ struct Labs {
 		for item in data {
 			switch item.0 {
 			case 1: results = "Patient has already receive the flu vaccine here."
-			case 2: results = "Patient declines flu shot."
-			case 3: results = "Patient will get flu vaccine at the pharmacy."
-			case 4: results = "Patient received flu vaccine at the pharmacy on \(pharmDate)."
-			case 5: results = "Patient will get flu vaccine at their place of employment."
-			case 6: results = "Patient received flu vaccine at their place of employment on \(employerDate)"
+			case 2: results = "Patient declines flu shot due to \(declineReason)."
+			case 3: results = "Patient will get flu vaccine at \(willGetAt)."
+			case 4: results = "Patient received flu vaccine at \(didGetAt) on \(didGetOn)."
 			default: continue
 			}
 		}
@@ -122,8 +134,20 @@ struct Labs {
 	}
 }
 
-struct LabDxValues {
-	func matchDxValuesToLabFrom(_ id:Int) -> [String]? {
+struct FluComboboxValues: populateComboBoxProtocol {
+	func matchValuesFrom(_ id: Int) -> [String]? {
+		switch id {
+		case 10: return declinesFlu
+		case 11, 12: return whereFlu
+		default: return ["No matching values found."]
+		}
+	}
+	
+	
+}
+
+struct LabDxValues: populateComboBoxProtocol {
+	func matchValuesFrom(_ id:Int) -> [String]? {
 		switch id {
 		case 1/*bmpDxValues*/: return ["", "Z79.899 MedUse", "Z79.891 MedOpi", "Z00.00", "I10 HTN", "E11.9 DMII", "E11.65", "N18.9"]
 		case 2/*cmpDxValues*/: return ["", "Z79.899 MedUse", "Z79.891 MedOpi", "Z00.00", "I10 HTN", "E11.9 DMII", "N18.9", "R10.9"]
@@ -178,4 +202,4 @@ struct LabDxValues {
 	}
 }
 
-let headerInfo = ("Whelchel Primary Care Medicine" + "\n" + "401 East Pinecrest, Marshall, TX  75670" + "\n" + "CPL Client #: 36686" + "\n" + "Phone: 903-935-7101     Fax: 903-935-7043")
+

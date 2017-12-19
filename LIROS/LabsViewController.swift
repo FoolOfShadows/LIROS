@@ -54,16 +54,16 @@ class LabsViewController: NSViewController {
 	
 	//Populates the choices of the comboboxes in a view based on matching
 	//the boxes tag with a switch in the LabDxValues struct
-	func populateComboboxSelectionsIn(_ view: NSView) {
+	func populateComboboxSelectionsIn(_ view: NSView/*, Using theStruct: populateComboBoxProtocol*/) {
 		for item in view.subviews {
 			if let isCombobox = item as? NSComboBox {
-				if let dxSelections = LabDxValues().matchDxValuesToLabFrom(isCombobox.tag) {
+				if let dxSelections = LabDxValues().matchValuesFrom(isCombobox.tag) {
 					isCombobox.removeAllItems()
 					isCombobox.addItems(withObjectValues: dxSelections)
 					isCombobox.selectItem(at: 0)
 				}
 			} else if item is NSView {
-				populateComboboxSelectionsIn(item)
+				populateComboboxSelectionsIn(view)
 			}
 		}
 		
