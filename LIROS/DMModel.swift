@@ -30,7 +30,7 @@ func processCompliance(_ data:[(Int, String?)]) -> String {
 		case 1: results.append("Diabetes Mellitus \(item.1!)")
 		case 2: results.append(item.1!)
 		case 3: if let i = item.1 { results.append(i) }
-		case 4: results.append("Patient reposrts compliance with taking medications and is taking them without difficulty.")
+		case 4: results.append("Patient reports compliance with taking medications and is taking them without difficulty.")
 		case 5: results.append("Patient is exercising regularly.")
 		case 6: results.append("Patient is not exercising regularly.")
 		case 7: results.append("Blood sugar log probided and reviewed.")

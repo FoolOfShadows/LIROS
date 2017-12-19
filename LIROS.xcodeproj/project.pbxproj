@@ -25,6 +25,7 @@
 		7962486A1E953D5800AB8361 /* ROSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796248691E953D5800AB8361 /* ROSViewController.swift */; };
 		79629E6A1FAA3D66001840DE /* LabSetUpPrintViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79629E691FAA3D66001840DE /* LabSetUpPrintViewController.swift */; };
 		79629E6C1FAA49EA001840DE /* PrintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79629E6B1FAA49EA001840DE /* PrintView.swift */; };
+		7962A0DD1FE95D720011E191 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7962A0DC1FE95D720011E191 /* StringExtensions.swift */; };
 		797A2D271FC5E9E4002F8396 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797A2D261FC5E9E4002F8396 /* TabViewController.swift */; };
 		798A06B61FD717EB00B81A52 /* DMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798A06B51FD717EB00B81A52 /* DMViewController.swift */; };
 		798A06B81FD717F900B81A52 /* DMModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798A06B71FD717F900B81A52 /* DMModel.swift */; };
@@ -61,6 +62,7 @@
 		796248691E953D5800AB8361 /* ROSViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ROSViewController.swift; sourceTree = "<group>"; };
 		79629E691FAA3D66001840DE /* LabSetUpPrintViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabSetUpPrintViewController.swift; sourceTree = "<group>"; };
 		79629E6B1FAA49EA001840DE /* PrintView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintView.swift; sourceTree = "<group>"; };
+		7962A0DC1FE95D720011E191 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		797A2D261FC5E9E4002F8396 /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
 		798A06B51FD717EB00B81A52 /* DMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMViewController.swift; sourceTree = "<group>"; };
 		798A06B71FD717F900B81A52 /* DMModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMModel.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 			children = (
 				796248521E952D9600AB8361 /* AppDelegate.swift */,
 				796248541E952D9600AB8361 /* ViewController.swift */,
+				799057431FE4251A00FA4CEA /* MasterTabViewController.swift */,
 				797A2D261FC5E9E4002F8396 /* TabViewController.swift */,
 				796248561E952D9700AB8361 /* Assets.xcassets */,
 				796248581E952D9700AB8361 /* Main.storyboard */,
@@ -133,10 +136,10 @@
 				79A209301FE17199000D2628 /* WWEModel.swift */,
 				7962485B1E952D9700AB8361 /* Info.plist */,
 				796248611E95351300AB8361 /* GeneralExtensions.swift */,
+				7962A0DC1FE95D720011E191 /* StringExtensions.swift */,
 				796248631E95351300AB8361 /* BlackLineClass.swift */,
 				796248671E95369A00AB8361 /* RedGreenCheckbox.swift */,
 				79629E6B1FAA49EA001840DE /* PrintView.swift */,
-				799057431FE4251A00FA4CEA /* MasterTabViewController.swift */,
 				799057451FE448FB00FA4CEA /* Preferences.swift */,
 			);
 			path = LIROS;
@@ -227,6 +230,7 @@
 				796248681E95369A00AB8361 /* RedGreenCheckbox.swift in Sources */,
 				796248661E95351300AB8361 /* BlackLineClass.swift in Sources */,
 				7900B99E1FB1F589001C2DB1 /* HPIViewController.swift in Sources */,
+				7962A0DD1FE95D720011E191 /* StringExtensions.swift in Sources */,
 				795132EB1FD9BF8C00BBF5B3 /* ProcInjViewController.swift in Sources */,
 				7962486A1E953D5800AB8361 /* ROSViewController.swift in Sources */,
 				799057441FE4251A00FA4CEA /* MasterTabViewController.swift in Sources */,

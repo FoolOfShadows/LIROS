@@ -23,5 +23,6 @@ class TabViewController: NSTabViewController {
 		let tabArray = MainTabView.tabViewItems
 		print("\n\n\n\nThe tab is: \(tabArray[0])\n\n\n\n")
 	}
+
     
 }
