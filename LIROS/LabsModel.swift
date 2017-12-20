@@ -110,10 +110,10 @@ struct Labs {
 		
 		for item in data {
 			switch item.0 {
-			case 10: declineReason = item.1!
-			case 11: willGetAt = item.1!
-			case 12: didGetAt = item.1!
-			case 15: didGetOn = item.1!
+			case 10: declineReason = ": \(item.1!)"
+			case 11: willGetAt = " at \(item.1!)"
+			case 12: didGetAt = " at \(item.1!)"
+			case 15: didGetOn = ": \(item.1!)"
 			default: continue
 			}
 		}
@@ -122,9 +122,9 @@ struct Labs {
 		for item in data {
 			switch item.0 {
 			case 1: results = "Patient has already receive the flu vaccine here."
-			case 2: results = "Patient declines flu shot due to \(declineReason)."
-			case 3: results = "Patient will get flu vaccine at \(willGetAt)."
-			case 4: results = "Patient received flu vaccine at \(didGetAt) on \(didGetOn)."
+			case 2: results = "Patient declines flu shot\(declineReason)."
+			case 3: results = "Patient will get flu vaccine\(willGetAt)."
+			case 4: results = "Patient received flu vaccine\(didGetAt)\(didGetOn)."
 			default: continue
 			}
 		}
