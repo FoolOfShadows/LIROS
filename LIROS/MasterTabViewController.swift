@@ -21,14 +21,14 @@ class MasterTabViewController: NSTabViewController {
         if let medsList = getSectionDataStartingFrom("START COMMON MEDS", andEndingWith: "END COMMON MEDS") {
             commonMedsList = [""] + medsList
         }
-		if let whereFluList = getSectionDataStartingFrom("START WHERE FLU", andEndingWith: "END WHERE FLU") {
-			whereFlu = [""] + whereFluList
-		}
-		if let declinesFluList = getSectionDataStartingFrom("START DECLINES FLU", andEndingWith: "END DECLINES FLU") {
-			print("\n\n\n\(declinesFluList)\n\n\n")
-			declinesFlu = [""] + declinesFluList
-		}
-		
+        if let whereFluList = getSectionDataStartingFrom("START WHERE FLU", andEndingWith: "END WHERE FLU") {
+            whereFlu = [""] + whereFluList
+        }
+        if let declinesFluList = getSectionDataStartingFrom("START DECLINES FLU", andEndingWith: "END DECLINES FLU") {
+            print("\n\n\n\(declinesFluList)\n\n\n")
+            declinesFlu = [""] + declinesFluList
+        }
+        
     }
     
     

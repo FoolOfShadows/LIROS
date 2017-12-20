@@ -54,19 +54,19 @@ struct ProcInjModel {
             }
         }
         
-        func getHepVaccineTypeFrom(_ data:String) -> String {
-            switch data {
-            case "A1": return "Hepatitis A Vaccine #1: 0.5 ml"
-                case "A2": return "Hepatitis A Vaccine #2: 0.5 ml"
-                case "B1": return "Hepatitis B Vaccine #1: 0.5 ml"
-                case "B2": return "Hepatitis B Vaccine #2: 0.5 ml"
-                case "B3": return "Hepatitis B Vaccine #3: 0.5 ml"
-                case "TRx1": return "Hepatitis Trx Vaccine #1: 0.5 ml"
-                case "TRx2": return "Hepatitis Trx Vaccine #2: 0.5 ml"
-                case "TRx3": return "Hepatitis Trx Vaccine #3: 0.5 ml"
-            default: return ""
-            }
-        }
+		func getHepVaccineTypeFrom(_ data:String) -> String {
+			switch data {
+			case "A1": return "Hepatitis A Vaccine #1: 0.5 ml"
+			case "A2": return "Hepatitis A Vaccine #2: 0.5 ml"
+			case "B1": return "Hepatitis B Vaccine #1: 0.5 ml"
+			case "B2": return "Hepatitis B Vaccine #2: 0.5 ml"
+			case "B3": return "Hepatitis B Vaccine #3: 0.5 ml"
+			case "TRx1": return "Hepatitis Trx Vaccine #1: 0.5 ml"
+			case "TRx2": return "Hepatitis Trx Vaccine #2: 0.5 ml"
+			case "TRx3": return "Hepatitis Trx Vaccine #3: 0.5 ml"
+			default: return ""
+			}
+		}
         
         for item in data {
             switch item.0 {
