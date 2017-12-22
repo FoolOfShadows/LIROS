@@ -16,7 +16,6 @@
 		795132EB1FD9BF8C00BBF5B3 /* ProcInjViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795132EA1FD9BF8C00BBF5B3 /* ProcInjViewController.swift */; };
 		795132ED1FD9BF9E00BBF5B3 /* ProcInjModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795132EC1FD9BF9E00BBF5B3 /* ProcInjModel.swift */; };
 		796248531E952D9600AB8361 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796248521E952D9600AB8361 /* AppDelegate.swift */; };
-		796248551E952D9600AB8361 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796248541E952D9600AB8361 /* ViewController.swift */; };
 		796248571E952D9700AB8361 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 796248561E952D9700AB8361 /* Assets.xcassets */; };
 		7962485A1E952D9700AB8361 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 796248581E952D9700AB8361 /* Main.storyboard */; };
 		796248641E95351300AB8361 /* GeneralExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796248611E95351300AB8361 /* GeneralExtensions.swift */; };
@@ -52,7 +51,6 @@
 		795132EC1FD9BF9E00BBF5B3 /* ProcInjModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcInjModel.swift; sourceTree = "<group>"; };
 		7962484F1E952D9600AB8361 /* LIROS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LIROS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		796248521E952D9600AB8361 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		796248541E952D9600AB8361 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		796248561E952D9700AB8361 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		796248591E952D9700AB8361 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7962485B1E952D9700AB8361 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -109,7 +107,6 @@
 			isa = PBXGroup;
 			children = (
 				796248521E952D9600AB8361 /* AppDelegate.swift */,
-				796248541E952D9600AB8361 /* ViewController.swift */,
 				799057431FE4251A00FA4CEA /* MasterTabViewController.swift */,
 				797A2D261FC5E9E4002F8396 /* TabViewController.swift */,
 				796248561E952D9700AB8361 /* Assets.xcassets */,
@@ -222,7 +219,6 @@
 				79D907B01FA78B5F00CB8FC0 /* LabsViewController.swift in Sources */,
 				79A209311FE17199000D2628 /* WWEModel.swift in Sources */,
 				79B226C01FAB557F0035C703 /* LabPrintViewController.swift in Sources */,
-				796248551E952D9600AB8361 /* ViewController.swift in Sources */,
 				790C7E701F9A6470001B02F2 /* DoctorViewController.swift in Sources */,
 				79D312251E9686870063C1FD /* ROSModel.swift in Sources */,
 				795132ED1FD9BF9E00BBF5B3 /* ProcInjModel.swift in Sources */,
