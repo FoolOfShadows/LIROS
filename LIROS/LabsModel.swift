@@ -70,7 +70,60 @@ struct Labs {
         default: return nil
         }
     }
-    
+	
+	func getPrintOutputFor(_ id:Int) -> String? {
+		switch id {
+		case 1: return "Basic Metabolic Panel (BMP)"
+		case 2: return "Complete Metabolic Panel (CMP)"
+		case 3: return "Complete Blood Count with Differential (CBC)"
+		case 4: return "Thyroid Stimulating Hormone (TSH)"
+		case 5: return "Free Thyroxine Level (T4F)"
+		case 6: return "Free Triiodothyronine Level (T3F)"
+		case 7: return "Vitamin D Total (25 Hydroxy)"
+		case 8: return "Uric Acid"
+		case 9: return "Creatine Kinase (CPK)"
+		case 10: return "Erythrocyte Sedimentation Rate (ESR)"
+		case 11: return "C-Reactive Protien (CRP)"
+		case 12: return "Rheumatoid Factor (RF)"
+		case 13: return "Free Prostate Specific Antigen (FPSA)"
+		case 14: return "HSV1/HSV2"
+		case 15: return "RPR"
+		case 16: return "Clamydia"
+		case 17: return "Lipid Panel"
+		case 18: return "Prostate Specific Antigen (PSA)"
+		case 19: return "Urine dip"
+		case 20: return "Urine Culture & Sensitivities"
+		case 21: return "Urine Drug Screen (UDS)"
+		case 22: return "UCG"
+		case 23: return "Partial Thromboplastin Time (PTT)"
+		case 24: return "Follicle Stimulating Hormone (FSH)"
+		case 25: return "Total Testosterone"
+		case 26: return "Antinuclear Anibody Titer & Pattern (ANA)"
+		case 27: return "Cyanocobalamin Level (Vitamin B12)"
+		case 28: return "Helicobacter Pylori Antibody Panel (H Pylori)"
+		case 29: return "Papanicolaou Smear (PAP)"
+		case 30: return "HIV"
+		case 31: return "Gonorhea"
+		case 32: return "NMR Lipid Panel"
+		case 33: return "Hemoglobin A1c w/EAG (HbA1c)"
+		case 34: return "Urine Microalbumin/Creatinine Ratio"
+		case 35: return "Urine Microscopic"
+		case 36: return "m UDS"
+		case 37: return "Urine Protein/Creatinine Ratio"
+		case 38: return "Protime w/International Normalizing Ration (PT/INR)"
+		case 39: return "Hormone Panel (Follicle Stimulating Hormone, Luteinizing Hormone, Progesterone, Prolactin, Estradiol, Testosterone)"
+		case 40: return "Free Testosterone"
+		case 41: return "ANA Panel (SSA/SSB, SCL/70, Centromere AB, Jo-1 Antibody, RA, ANA, C3, C4, DNA AB DS, Thyroid Peroxidase AB)"
+		case 42: return "Anemia Panel (CBC, Ferritin, Folic Acid, Iron/TIBC, LDH, Retic, B12)"
+		case 43: return "Cortisol Level"
+		case 44: return "Stool Studies (Stool Culture, Ova & Parasites, C Diff Ag/Toxin, Fecal WBC)"
+		case 45: return "Comprehensive hepatitis panel"
+		case 46: return "Acute hepatitis panel"
+		default: return nil
+		}
+	}
+	
+	
     func getOutputFor(_ tag:Int, description:String) {
         
     }
@@ -93,7 +146,7 @@ struct Labs {
         
         for item in data {
             guard let dx = item.1, !dx.isEmpty else { continue }
-            if let theLab = getOutputFor(item.0) {
+            if let theLab = getPrintOutputFor(item.0) {
                 let printLab = "\(theLab) - \(dx)"
                 resultArray.append(printLab)
             }

@@ -33,7 +33,7 @@ func processCompliance(_ data:[(Int, String?)]) -> String {
 		case 4: results.append("Patient reports compliance with taking medications and is taking them without difficulty.")
 		case 5: results.append("Patient is exercising regularly.")
 		case 6: results.append("Patient is not exercising regularly.")
-		case 7: results.append("Blood sugar log probided and reviewed.")
+		case 7: results.append("Blood sugar log provided and reviewed.")
 		case 8: results.append("Patient did not provide blood sugar log.")
 		case 9: if let i = item.1 { bsStick = "Patient is checking finger stick blood sugar \(i)" }
 		case 10: if let i = item.1 { bsStick += ", with a range of \(i)" }
