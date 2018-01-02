@@ -50,7 +50,6 @@ struct WellWomanExam {
         }
         
         var resultArray = [String]()
-        var result = String()
         for item in data {
             switch item.0 {
             case 1/* LastMammogram*/: resultArray.append("When was your last mammogram? \(item.1!)")

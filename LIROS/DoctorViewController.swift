@@ -49,7 +49,7 @@ class DoctorViewController: NSViewController {
 				if (item as! NSTextField).stringValue != "" {
 					results.append((item.tag, (item as! NSTextField).stringValue))
 				}
-			} else if item is NSView {
+			} else {
 				results += getButtonsIn(view: item)
 			}
 		}

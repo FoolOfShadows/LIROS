@@ -49,7 +49,7 @@ extension NSView {
                 } else if item is NSMatrix {
                     let matrix = item as? NSMatrix
                     matrix?.deselectAllCells()
-                } else if item is NSView {
+                } else {
                     clearChecksTextfields(theView: item)
                 }
             }
@@ -91,7 +91,7 @@ func getMatricesIn(view: NSView) -> [NSMatrix] {
         for item in view.subviews {
             if let isMatrix = item as? NSMatrix {
                 results.append(isMatrix)
-            } else if item is NSView {
+            } else {
                 results += getMatricesIn(view: item)
             }
     }
@@ -133,7 +133,7 @@ func getButtonsIn(view: NSView) -> [(Int, String?)]{
             if (item as! NSTextField).stringValue != "" {
                 results.append((item.tag, (item as! NSTextField).stringValue))
             }
-        } else if item is NSView {
+        } else {
             results += getButtonsIn(view: item)
         }
     }
@@ -162,7 +162,7 @@ func getStringsForButtonsIn(view: NSView) -> [String]{
             if (item as! NSTextField).stringValue != "" {
                 results.append((item as! NSTextField).stringValue)
             }
-        } else if item is NSView {
+        } else {
             results += getStringsForButtonsIn(view: item)
         }
     }

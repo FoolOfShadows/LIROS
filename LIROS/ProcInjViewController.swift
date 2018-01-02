@@ -57,7 +57,7 @@ class ProcInjViewController: NSViewController, NSTextFieldDelegate {
 				(item as! NSPopUpButton).clearPopUpButton(menuItems: ProcInjModel().getListItemsForID(item.tag))
 			} else if item is NSComboBox {
 				(item as! NSComboBox).clearComboBox(menuItems: ProcInjModel().getListItemsForID(item.tag))
-			} else if item is NSView {
+			} else {
 				setUpMenuItemsForButtonsIn(item)
 			}
 		}

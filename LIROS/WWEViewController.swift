@@ -65,7 +65,7 @@ class WWEViewController: NSViewController {
 				(item as! NSPopUpButton).clearPopUpButton(menuItems: WellWomanExam().getListItemsForID(item.tag))
 			} else if item is NSComboBox {
 				(item as! NSComboBox).clearComboBox(menuItems: WellWomanExam().getListItemsForID(item.tag))
-			} else if item is NSView {
+			} else {
 				setUpMenuItemsForButtonsIn(item)
 			}
 		}

@@ -45,7 +45,7 @@ class LabsViewController: NSViewController {
                 if isTextfield.isEditable {
                     results.append((isTextfield.tag, isTextfield.stringValue))
                 }
-            } else if item is NSView {
+            } else {
                 results += getTextfieldsIn(item)
             }
         }
@@ -62,7 +62,7 @@ class LabsViewController: NSViewController {
                     isCombobox.addItems(withObjectValues: dxSelections)
                     isCombobox.selectItem(at: 0)
                 }
-            } else if item is NSView {
+            } else {
                 populateComboboxSelectionsIn(item, Using: theStruct)
             }
         }
@@ -235,7 +235,7 @@ class LabsViewController: NSViewController {
         for item in view.subviews {
             if let button = item as? NSButton {
                 checkboxArray.append(button)
-            } else if item is NSView {
+            } else {
                 checkboxArray += getCheckboxesFromView(item)
             }
         }

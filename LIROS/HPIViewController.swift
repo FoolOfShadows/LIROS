@@ -34,7 +34,7 @@ class HPIViewController: NSViewController {
 		for item in view.subviews {
 			if item is NSTextField && (item as! NSTextField).isEditable {
 				results.append((item as! NSTextField))
-			} else if item is NSView {
+			} else {
 				results += getTextFieldsFrom(item)
 			}
 		}
@@ -46,7 +46,7 @@ class HPIViewController: NSViewController {
 		for item in view.subviews {
 			if item is NSButton {
 				results.append((item as? NSButton)!)
-			} else if item is NSView {
+			} else {
 				results += getListOfButtons(item)
 			}
 		}
