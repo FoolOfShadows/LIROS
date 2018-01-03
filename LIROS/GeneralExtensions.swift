@@ -46,7 +46,12 @@ extension NSView {
                     if (textfield?.isEditable)!{
                     textfield?.stringValue = ""
                     }
-                } else if item is NSMatrix {
+				} else if item is NSTextView {
+					let textview = item as? NSTextView
+					if (textview?.isEditable)! {
+						textview?.string = ""
+					}
+				} else if item is NSMatrix {
                     let matrix = item as? NSMatrix
                     matrix?.deselectAllCells()
                 } else {

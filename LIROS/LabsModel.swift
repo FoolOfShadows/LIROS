@@ -174,7 +174,7 @@ struct Labs {
         var results:String?
         for item in data {
             switch item.0 {
-            case 1: results = "Patient has already receive the flu vaccine here."
+            case 1: results = "Patient has already received the flu vaccine here."
             case 2: results = "Patient declines flu shot\(declineReason)."
             case 3: results = "Patient will get flu vaccine\(willGetAt)."
             case 4: results = "Patient received flu vaccine\(didGetAt)\(didGetOn)."

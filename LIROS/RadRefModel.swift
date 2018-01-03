@@ -25,6 +25,7 @@ let radCardioAreas = ["ECHO", "EKG", "stress test", "holter monitor", "30 day ca
 let radEmptySide = [""]
 let radContrast = ["with contrast", "without contrast", "with and without contrast"]
 let radSpineSide = ["C", "T", "L", "CTL"]
+let radXraySpineSide = ["C", "T", "L", "CTL", "Sacrum/Coxyx"]
 let radMRIAbSides = ["", "and pelvis without contrast", "and pelvis with PO&IV contrast", "and pelvis with PO contrast"]
 let radRLBSides = ["", "right side", "left side", "bilateral"]
 let radExtremeties = ["right arm", "left arm", "right leg", "left leg"]

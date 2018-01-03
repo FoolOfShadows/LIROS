@@ -106,6 +106,8 @@ class RadRefVewController: NSViewController {
 			switch sender.title {
 			case "rib series", "shoulder series", "knee series with standing film", "hip", "femur", "tib fib", "ankle", "foot", "elbow", "wrist", "hand":
 				radSidePopup.clearPopUpButton(menuItems: radRLBSides)
+			case "spine":
+				radSidePopup.clearPopUpButton(menuItems: radXraySpineSide)
 			default:
 				radSidePopup.clearPopUpButton(menuItems: radEmptySide)
 			}

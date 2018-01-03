@@ -160,7 +160,11 @@ struct ProcInjModel {
             case 3: resultArray.append("UDS, consent signed.")
             case 4: resultArray.append("m UDS, consent signed.")
             case 5: resultArray.append("Rapid Flu A&B swab, consent signed.")
-            case 6: resultArray.append("Glucometer finger blood sugar done in office today with a result of \(item.1!).")
+			case 26: resultArray.append("Flu swab tests positive for Influenza A")
+			case 27: resultArray.append("Flu swab tests positive for Influenza B")
+			case 6: resultArray.append("Flu swab tests negative for Influenza A")
+			case 7: resultArray.append("Flu swab tests negative for Influenza B")
+            case 10: resultArray.append("Glucometer finger blood sugar done in office today with a result of \(item.1!).")
             default: continue
             }
         }
