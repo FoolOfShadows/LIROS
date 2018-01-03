@@ -38,6 +38,7 @@
 		79D907B21FA78B7400CB8FC0 /* LabsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D907B11FA78B7400CB8FC0 /* LabsModel.swift */; };
 		79DCEF161FD1CDDB004C8066 /* PainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DCEF151FD1CDDB004C8066 /* PainViewController.swift */; };
 		79DCEF181FD1CE19004C8066 /* PainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DCEF171FD1CE19004C8066 /* PainModel.swift */; };
+		79F680731FFBE0CD00A4D29C /* CurrentAssessmentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F680721FFBE0CD00A4D29C /* CurrentAssessmentController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +75,7 @@
 		79D907B11FA78B7400CB8FC0 /* LabsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabsModel.swift; sourceTree = "<group>"; };
 		79DCEF151FD1CDDB004C8066 /* PainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PainViewController.swift; sourceTree = "<group>"; };
 		79DCEF171FD1CE19004C8066 /* PainModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PainModel.swift; sourceTree = "<group>"; };
+		79F680721FFBE0CD00A4D29C /* CurrentAssessmentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentAssessmentController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 				790B00901F98F2530031B190 /* RadRefModel.swift */,
 				790C7E6F1F9A6470001B02F2 /* DoctorViewController.swift */,
 				790C7E711F9A6482001B02F2 /* DoctorModel.swift */,
+				79F680721FFBE0CD00A4D29C /* CurrentAssessmentController.swift */,
 				7900B99D1FB1F589001C2DB1 /* HPIViewController.swift */,
 				7900B99F1FB1F598001C2DB1 /* HPIModel.swift */,
 				79DCEF151FD1CDDB004C8066 /* PainViewController.swift */,
@@ -222,6 +225,7 @@
 				790C7E701F9A6470001B02F2 /* DoctorViewController.swift in Sources */,
 				79D312251E9686870063C1FD /* ROSModel.swift in Sources */,
 				795132ED1FD9BF9E00BBF5B3 /* ProcInjModel.swift in Sources */,
+				79F680731FFBE0CD00A4D29C /* CurrentAssessmentController.swift in Sources */,
 				79DCEF161FD1CDDB004C8066 /* PainViewController.swift in Sources */,
 				796248681E95369A00AB8361 /* RedGreenCheckbox.swift in Sources */,
 				796248661E95351300AB8361 /* BlackLineClass.swift in Sources */,
