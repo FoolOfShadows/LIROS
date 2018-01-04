@@ -27,7 +27,9 @@ class DoctorViewController: NSViewController, NSTableViewDataSource, NSTableView
     @IBOutlet weak var synvPopup: NSPopUpButton!
     @IBOutlet weak var assessmentTableView: NSTableView!
     
-    var assessmentString = String()
+	@IBOutlet weak var visitLevelStack: NSStackView!
+	
+	var assessmentString = String()
     var assessmentList = [String]()
     
     let nc = NotificationCenter.default
@@ -171,16 +173,14 @@ class DoctorViewController: NSViewController, NSTableViewDataSource, NSTableView
         self.assessmentTableView.reloadData()
     }
     
-    @IBAction func processAssessmentTable(_ sender: Any) {
-        if !assessmentList.isEmpty {
-            let results = assessmentList.map {$0.prependDashToLine()}.joined(separator: "\n")
-            
-            let myPasteboard = NSPasteboard.general
-            myPasteboard.clearContents()
-            myPasteboard.setString(results, forType: NSPasteboard.PasteboardType.string)
-        }
-        print(assessmentList)
-    }
+	@IBAction func processAssessmentTable(_ sender: Any) {
+		
+		let results = Assessment().processAssessmentUsingArray(assessmentList, and: visitLevelStack.getListOfButtons().filter {$0.state == .on}.map {$0.title})
+		
+		let myPasteboard = NSPasteboard.general
+		myPasteboard.clearContents()
+		myPasteboard.setString(results, forType: NSPasteboard.PasteboardType.string)
+	}
     
     //Adds a blank line to the table and selects it, also adding a corresponding
     //empty string item to the data source array
@@ -218,4 +218,13 @@ class DoctorViewController: NSViewController, NSTableViewDataSource, NSTableView
             assessmentTableView.removeRows(at:indexSet, withAnimation:NSTableView.AnimationOptions.effectFade)
         }
     }
+	
+	@IBAction func onlyOneCheckAtATime(_ sender:NSButton) {
+		let boxes = visitLevelStack.getListOfButtons()
+		for box in boxes {
+			if box.title != sender.title {
+				box.state = .off
+			}
+		}
+	}
 }

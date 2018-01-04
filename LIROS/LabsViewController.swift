@@ -222,24 +222,13 @@ class LabsViewController: NSViewController {
     }
     
     @IBAction func onlyOneCheckAtATime(_ sender:NSButton) {
-        let fluCheckboxes = getCheckboxesFromView(fluBox)
+        let fluCheckboxes = fluBox.getListOfButtons()
         for box in fluCheckboxes {
             if box.tag != sender.tag {
                 box.state = .off
             }
         }
     }
-    
-    func getCheckboxesFromView(_ view:NSView) -> [NSButton] {
-        var checkboxArray = [NSButton]()
-        for item in view.subviews {
-            if let button = item as? NSButton {
-                checkboxArray.append(button)
-            } else {
-                checkboxArray += getCheckboxesFromView(item)
-            }
-        }
-        return checkboxArray
-    }
+	
 
 }

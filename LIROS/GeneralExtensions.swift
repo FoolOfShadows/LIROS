@@ -61,6 +61,19 @@ extension NSView {
         }
     clearChecksTextfields(theView: self)
     }
+	
+	func getListOfButtons() -> [NSButton] {
+		var results = [NSButton]()
+		for item in self.subviews {
+			if let item = item as? NSButton {
+				results.append(item)
+			} else {
+				results += item.getListOfButtons()
+			}
+		}
+		return results
+	}
+	
 }
 
 extension NSComboBox {

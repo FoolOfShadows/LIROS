@@ -177,3 +177,18 @@ struct Injections {
         return results
     }
 }
+
+struct Assessment {
+	func processAssessmentUsingArray(_ list:[String], and data:[String]) -> String {
+		var resultArray = [String]()
+		if !list.isEmpty {
+			resultArray.append(list.map {$0.prependDashToLine()}.joined(separator: "\n"))
+		}
+		
+		if !data.isEmpty {
+			resultArray.append(data.map {"Lvl \($0)"}.joined(separator: "\n"))
+		}
+		
+		return resultArray.joined(separator: "\n")
+	}
+}

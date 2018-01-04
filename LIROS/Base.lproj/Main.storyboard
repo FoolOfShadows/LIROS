@@ -1076,7 +1076,7 @@ Gw
                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                     <prototypeCellViews>
                                                         <tableCellView id="MXR-Gd-71g">
-                                                            <rect key="frame" x="49" y="1" width="357" height="20"/>
+                                                            <rect key="frame" x="48.5" y="1" width="357" height="20"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
                                                                 <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WLa-oK-6xC">
@@ -3906,6 +3906,76 @@ periods</string>
                                     <action selector="processAssessmentTable:" target="9li-Ef-vNd" id="KZP-H0-GAs"/>
                                 </connections>
                             </button>
+                            <stackView distribution="fill" orientation="horizontal" alignment="top" spacing="6" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" fixedFrame="YES" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d0l-si-X9K">
+                                <rect key="frame" x="724" y="514" width="169" height="14"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button tag="4" translatesAutoresizingMaskIntoConstraints="NO" id="ufh-jp-ALR">
+                                        <rect key="frame" x="-2" y="-2" width="30" height="18"/>
+                                        <buttonCell key="cell" type="check" title="2" bezelStyle="regularSquare" imagePosition="left" inset="2" id="Ep2-pH-IfN">
+                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="onlyOneCheckAtATime:" target="9li-Ef-vNd" id="dNM-VA-gfF"/>
+                                        </connections>
+                                    </button>
+                                    <button tag="4" translatesAutoresizingMaskIntoConstraints="NO" id="cug-yh-9mu">
+                                        <rect key="frame" x="30" y="-2" width="31" height="18"/>
+                                        <buttonCell key="cell" type="check" title="3" bezelStyle="regularSquare" imagePosition="left" inset="2" id="6rY-S4-LTO">
+                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="onlyOneCheckAtATime:" target="9li-Ef-vNd" id="ilS-Rs-5hx"/>
+                                        </connections>
+                                    </button>
+                                    <button tag="4" translatesAutoresizingMaskIntoConstraints="NO" id="nwe-IV-vfs">
+                                        <rect key="frame" x="63" y="-2" width="31" height="18"/>
+                                        <buttonCell key="cell" type="check" title="4" bezelStyle="regularSquare" imagePosition="left" inset="2" id="Tfs-Jd-y9d">
+                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="onlyOneCheckAtATime:" target="9li-Ef-vNd" id="yuq-Rq-kCC"/>
+                                        </connections>
+                                    </button>
+                                    <button tag="4" translatesAutoresizingMaskIntoConstraints="NO" id="PzM-f3-8Mm">
+                                        <rect key="frame" x="96" y="-2" width="30" height="18"/>
+                                        <buttonCell key="cell" type="check" title="5" bezelStyle="regularSquare" imagePosition="left" inset="2" id="e3R-N7-Jkw">
+                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="onlyOneCheckAtATime:" target="9li-Ef-vNd" id="njS-8C-zqa"/>
+                                        </connections>
+                                    </button>
+                                    <button tag="4" translatesAutoresizingMaskIntoConstraints="NO" id="iPf-Sx-ali">
+                                        <rect key="frame" x="128" y="-2" width="43" height="18"/>
+                                        <buttonCell key="cell" type="check" title="WE" bezelStyle="regularSquare" imagePosition="left" inset="2" id="atb-AL-rHg">
+                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="onlyOneCheckAtATime:" target="9li-Ef-vNd" id="eIl-l4-ydh"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <visibilityPriorities>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                </visibilityPriorities>
+                                <customSpacing>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                </customSpacing>
+                            </stackView>
                         </subviews>
                     </view>
                     <connections>
@@ -3920,6 +3990,7 @@ periods</string>
                         <outlet property="medicationView" destination="SPm-HS-9bb" id="AqG-Hz-MOJ"/>
                         <outlet property="proceduresView" destination="ZGg-Kw-OaL" id="nHz-g8-cK3"/>
                         <outlet property="synvPopup" destination="H9L-en-Xie" id="LfT-a5-OAZ"/>
+                        <outlet property="visitLevelStack" destination="d0l-si-X9K" id="dZP-16-zeL"/>
                         <segue destination="xiR-Xo-zaI" kind="sheet" identifier="showCurrentAssessment" id="gjf-5T-6gk"/>
                     </connections>
                 </viewController>
