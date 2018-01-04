@@ -20,41 +20,41 @@ class CurrentAssessmentController: NSViewController, NSTableViewDelegate, NSTabl
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
+		self.currentAssessmentTableView.delegate = self
+		self.currentAssessmentTableView.dataSource = self
 		//assessmentString = cleanArray()
 		assessmentArray = getArrayFrom(assessmentString)
+		self.currentAssessmentTableView.reloadData()
 	}
 	
 	func numberOfRows(in tableView: NSTableView) -> Int {
-		print("\n\n\nArray Count = \(assessmentArray.count)/n/n/n")
 		return assessmentArray.count
 	}
 	
 	func getArrayFrom(_ assessmentString:String) -> [String] {
 		var returnArray = assessmentString.components(separatedBy: "\n").filter { $0 != "" && $0 != "  "}
 		returnArray = returnArray.map { $0.replacingOccurrences(of: "- ", with: "") }
+		returnArray = returnArray.map {$0.removeWhiteSpace()}
 		
 		return returnArray
 	}
 	
 	//Set up the tableview with the data from the assmentArray array
 	func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
-		guard let vw = tableView.makeView(withIdentifier: tableColumn!.identifier, owner: self) as? NSTableCellView else { return nil }
-		print("/n/n/nvw successfully created/n/n/n")
-		vw.textField?.stringValue = assessmentArray[row]
+		var result:NSTableCellView
+		result = tableView.makeView(withIdentifier: (tableColumn?.identifier)!, owner: self) as! NSTableCellView
+		result.textField?.stringValue = assessmentArray[row]
 		
-		return vw
+		return result
 	}
 	
 	@IBAction func getDataFromSelectedRow(_ sender:Any) {
 		let currentRow = currentAssessmentTableView.row(for: sender as! NSView)
-		//print(currentRow)
 		if (sender as! NSButton).state == .on {
 			chosenAssessments.append(assessmentArray[currentRow])
 		} else if (sender as! NSButton).state == .off {
 			chosenAssessments = chosenAssessments.filter { $0 != assessmentArray[currentRow] }
 		}
-		//print(chosenMeds)
-		
 	}
 	
 	func cleanArray() -> String {
@@ -66,11 +66,11 @@ class CurrentAssessmentController: NSViewController, NSTableViewDelegate, NSTabl
 	}
 	
 	
-	@IBAction func addAssments(_ sender: Any) {
-//		let firstVC = presenting as! ViewController
-//		firstVC.medList += chosenMeds
-//		medReloadDelegate?.currentMedsWillBeDismissed(sender: self)
-//		self.dismiss(self)
+	@IBAction func returnResults(_ sender:Any) {
+		let firstVC = presenting as! DoctorViewController
+		firstVC.assessmentList += chosenAssessments
+		assessmentReloadDelegate?.currentAssessmentWillBeDismissed(sender: self)
+		self.dismiss(self)
 	}
 	
 	
