@@ -85,6 +85,7 @@ class DoctorViewController: NSViewController, NSTableViewDataSource, NSTableView
         arthPopup.clearPopUpButton(menuItems: jointList)
         synvPopup.clearPopUpButton(menuItems: kneeList)
         assessmentList = [String]()
+		self.assessmentTableView.reloadData()
     }
     
     @IBAction func processDrTab(_ sender: Any) {
