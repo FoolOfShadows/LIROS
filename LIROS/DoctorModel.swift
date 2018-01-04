@@ -126,54 +126,54 @@ struct Procedures {
 }
 
 struct Injections {
-	func processInjectionsUsing(_ data:[(Int, String?)]) -> String {
-		var resultArray = [String]()
-		var results = String()
-		
-		func getSiteSpecificArthroVerbiageFrom(_ data:String) -> String {
-			if data.range(of: "Knee") != nil {
-				return "Arthrocentesis \(data) medial flexed knee approach, with injection of 1 cc 1% lidocaine + 1 cc Marcaine + 1 cc (6 mg) Celestone, after cleansed and prepped with betadine and alcohol.  Pt tolerated procedure well. EBL: none. Consent signed."
-			} else if data.range(of: "Elbow") != nil  {
-				return "Arthrocentesis \(data) olecranon bursa / lateral epicondyle, with injection of 1 cc 1% lidocaine + 1 cc (6 mg) Celestone, after cleansed and prepped with betadine and alcohol.  Pt tolerated procedure well. EBL: none. Consent signed."
-			} else if data.range(of: "Shoulder") != nil  {
-				return "Arthrocentesis \(data) posterior approach, with injection of 1 cc 1% lidocaine + 1 cc Marcaine + 1 cc (6 mg) Celestone, after cleansed and prepped with betadine and alcohol.  Pt tolerated procedure well. EBL: none. Consent signed."
-			} else {
-				return ""
-			}
-		}
-		
-		for item in data {
-			switch item.0 {
-			case 1: resultArray.append("Decadron 4 mg/1 ml + Kenalog 40 mg/1 ml")
-			case 2: resultArray.append("Celestone 6 mg/1 ml")
-			case 3: resultArray.append("Solumedrol 125 mg")
-			case 4: resultArray.append("B12 1000 mcg/1 ml")
-			case 5: resultArray.append("Phenergan 25 mg")
-			case 6: resultArray.append("Toradol (Ketoralac)")
-			case 7: resultArray.append("Testosterone Cypionate 200 mg/1 ml")
-			case 6: resultArray.append("Toradol (Ketoralac)")
-			case 8: resultArray.append("Estradiol Cypionate 5 mg/1ml")
-			case 20: resultArray.append(getSiteSpecificArthroVerbiageFrom(item.1!))
-			case 9: resultArray.append("PPD (Purified Protein Derivative) Mantoux TB Skin Test 0.1 ml/5 TU")
-			case 10: resultArray.append("Flu shot: 0.5 ml")
-			case 11: resultArray.append("Pneumovax 23: 0.5 ml")
-			case 12: resultArray.append("Tdap 0.5 ml")
-			case 13: resultArray.append("Nubain 10 mg + Phenergan 25 mg")
-			case 14: resultArray.append("Rocephin Lidocaine")
-			case 15: resultArray.append("DepoProvera 150 mg/1 ml")
-			case 16: resultArray.append("Procrit/Epogen 10,000 u")
-			case 21: resultArray.append("Arthrocentesis \(item.1!) medial flexed knee approach, with injection of 1 cc 1% lidocaine + Synvisc ONE, after cleansed and prepped with betadine and alcohol.  Pt tolerated procedure well. EBL: none. Consent signed.")
-			case 22: resultArray.append("Trigger point injection with Lidocaine 1 ml + Celestone 6 mg/1 ml \(item.1!).")
-			case 25: resultArray.append("\(item.1!)")
-			case 30: resultArray.append("Prevnax 13: 0.5 ml IM, Rx written and given to patient.")
-			default: continue
-			}
-		}
-		
-		if !resultArray.isEmpty {
-			results = "Injection(s) given:\n\(resultArray.joined(separator: "\n"))"
-		}
-		
-		return results
-	}
+    func processInjectionsUsing(_ data:[(Int, String?)]) -> String {
+        var resultArray = [String]()
+        var results = String()
+        
+        func getSiteSpecificArthroVerbiageFrom(_ data:String) -> String {
+            if data.range(of: "Knee") != nil {
+                return "Arthrocentesis \(data) medial flexed knee approach, with injection of 1 cc 1% lidocaine + 1 cc Marcaine + 1 cc (6 mg) Celestone, after cleansed and prepped with betadine and alcohol.  Pt tolerated procedure well. EBL: none. Consent signed."
+            } else if data.range(of: "Elbow") != nil  {
+                return "Arthrocentesis \(data) olecranon bursa / lateral epicondyle, with injection of 1 cc 1% lidocaine + 1 cc (6 mg) Celestone, after cleansed and prepped with betadine and alcohol.  Pt tolerated procedure well. EBL: none. Consent signed."
+            } else if data.range(of: "Shoulder") != nil  {
+                return "Arthrocentesis \(data) posterior approach, with injection of 1 cc 1% lidocaine + 1 cc Marcaine + 1 cc (6 mg) Celestone, after cleansed and prepped with betadine and alcohol.  Pt tolerated procedure well. EBL: none. Consent signed."
+            } else {
+                return ""
+            }
+        }
+        
+        for item in data {
+            switch item.0 {
+            case 1: resultArray.append("Decadron 4 mg/1 ml + Kenalog 40 mg/1 ml")
+            case 2: resultArray.append("Celestone 6 mg/1 ml")
+            case 3: resultArray.append("Solumedrol 125 mg")
+            case 4: resultArray.append("B12 1000 mcg/1 ml")
+            case 5: resultArray.append("Phenergan 25 mg")
+            case 6: resultArray.append("Toradol (Ketoralac)")
+            case 7: resultArray.append("Testosterone Cypionate 200 mg/1 ml")
+            case 6: resultArray.append("Toradol (Ketoralac)")
+            case 8: resultArray.append("Estradiol Cypionate 5 mg/1ml")
+            case 20: resultArray.append(getSiteSpecificArthroVerbiageFrom(item.1!))
+            case 9: resultArray.append("PPD (Purified Protein Derivative) Mantoux TB Skin Test 0.1 ml/5 TU")
+            case 10: resultArray.append("Flu shot: 0.5 ml")
+            case 11: resultArray.append("Pneumovax 23: 0.5 ml")
+            case 12: resultArray.append("Tdap 0.5 ml")
+            case 13: resultArray.append("Nubain 10 mg + Phenergan 25 mg")
+            case 14: resultArray.append("Rocephin Lidocaine")
+            case 15: resultArray.append("DepoProvera 150 mg/1 ml")
+            case 16: resultArray.append("Procrit/Epogen 10,000 u")
+            case 21: resultArray.append("Arthrocentesis \(item.1!) medial flexed knee approach, with injection of 1 cc 1% lidocaine + Synvisc ONE, after cleansed and prepped with betadine and alcohol.  Pt tolerated procedure well. EBL: none. Consent signed.")
+            case 22: resultArray.append("Trigger point injection with Lidocaine 1 ml + Celestone 6 mg/1 ml \(item.1!).")
+            case 25: resultArray.append("\(item.1!)")
+            case 30: resultArray.append("Prevnax 13: 0.5 ml IM, Rx written and given to patient.")
+            default: continue
+            }
+        }
+        
+        if !resultArray.isEmpty {
+            results = "Injection(s) given:\n\(resultArray.joined(separator: "\n"))"
+        }
+        
+        return results
+    }
 }

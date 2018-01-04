@@ -10,7 +10,7 @@ import Cocoa
 
 //Protocol to set up for accepting data back from the CurrentAssessmentController
 protocol assessmentTableDelegate: class {
-	func currentAssessmentWillBeDismissed(sender: CurrentAssessmentController)
+    func currentAssessmentWillBeDismissed(sender: CurrentAssessmentController)
 }
 
 class DoctorViewController: NSViewController, NSTableViewDataSource, NSTableViewDelegate, assessmentTableDelegate {
@@ -25,11 +25,11 @@ class DoctorViewController: NSViewController, NSTableViewDataSource, NSTableView
     @IBOutlet weak var medicationView: NSTextField!
     @IBOutlet weak var arthPopup: NSPopUpButton!
     @IBOutlet weak var synvPopup: NSPopUpButton!
-	@IBOutlet weak var assessmentTableView: NSTableView!
-	
-	var assessmentString = String()
-	var assessmentList = [String]()
-	
+    @IBOutlet weak var assessmentTableView: NSTableView!
+    
+    var assessmentString = String()
+    var assessmentList = [String]()
+    
     let nc = NotificationCenter.default
     
     func getDataFromView(_ view:NSView) -> [(Int, String?)] {
@@ -67,8 +67,8 @@ class DoctorViewController: NSViewController, NSTableViewDataSource, NSTableView
     
     override func viewDidLoad() {
         super.viewDidLoad()
-		self.assessmentTableView.delegate = self
-		self.assessmentTableView.dataSource = self
+        self.assessmentTableView.delegate = self
+        self.assessmentTableView.dataSource = self
         clearDrTab(self)
     }
     
@@ -84,7 +84,7 @@ class DoctorViewController: NSViewController, NSTableViewDataSource, NSTableView
         commonMedsPopup.clearPopUpButton(menuItems: commonMedsList)
         arthPopup.clearPopUpButton(menuItems: jointList)
         synvPopup.clearPopUpButton(menuItems: kneeList)
-		assessmentList = [String]()
+        assessmentList = [String]()
     }
     
     @IBAction func processDrTab(_ sender: Any) {
@@ -108,113 +108,113 @@ class DoctorViewController: NSViewController, NSTableViewDataSource, NSTableView
         //Set the system clipboard to the final text
         pasteBoard.setString(results, forType: NSPasteboard.PasteboardType.string)
     }
-	
-	//MARK: Table Handling Functions
-	func numberOfRows(in tableView: NSTableView) -> Int {
-		return assessmentList.count
-	}
-	
-	//Set up the tableview with the data from the assessmentList array
-	func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
-		var result:NSTableCellView
-		result = tableView.makeView(withIdentifier: (tableColumn?.identifier)!, owner: self) as! NSTableCellView
-		result.textField?.stringValue = assessmentList[row]
-		
-		return result
-	}
-	
-	@IBAction func getMedsFromFile(_ sender: NSButton) {
-		let panel = NSOpenPanel()
-		panel.canChooseDirectories = true
-		panel.canChooseFiles = true
-		panel.allowedFileTypes = ["txt"]
-		
-		panel.beginSheetModal(for: self.view.window!, completionHandler: {(returnCode) -> Void in
-			if returnCode == NSApplication.ModalResponse.OK {
-				let message = panel.url?.path
-				self.assessmentString = self.processAssessmentFromNoteAt(message)
-				self.performSegue(withIdentifier: NSStoryboardSegue.Identifier(rawValue: "showCurrentAssessment"), sender: nil)
-			}
-		})
-		
-		
-	}
-	
-	func processAssessmentFromNoteAt(_ url: String?) -> String {
-		var fullText = String()
-		do {
-			fullText = try String(contentsOfFile: url!, encoding: String.Encoding.utf8)
-		} catch {
-			return ""
-		}
-		
-		let medications = fullText.findRegexMatchBetween("Problems:", and: "S:")?.removeWhiteSpace() ?? ""
-		
-		return medications
-	}
-	
-	override func prepare(for segue: NSStoryboardSegue, sender: Any?) {
-		if segue.identifier!.rawValue == "showCurrentAssessment" {
-			if let toViewController = segue.destinationController as? CurrentAssessmentController {
-				//For the delegate to work, it needs to be assigned here
-				//rather than in view did load.  Because it's a modal window?
-				toViewController.assessmentReloadDelegate = self
-				toViewController.assessmentString = assessmentString
-			}
-		}
-	}
-	
-	//When the modal window dismisses, it needs to tell the main view to update
-	//the assessment table with the data it passes back using delegation
-	func currentAssessmentWillBeDismissed(sender: CurrentAssessmentController) {
-		self.assessmentTableView.reloadData()
-	}
-	
-	@IBAction func processAssessmentTable(_ sender: Any) {
-		if !assessmentList.isEmpty {
-			let results = assessmentList.map {$0.prependDashToLine()}.joined(separator: "\n")
-			
-			let myPasteboard = NSPasteboard.general
-			myPasteboard.clearContents()
-			myPasteboard.setString(results, forType: NSPasteboard.PasteboardType.string)
-		}
-		print(assessmentList)
-	}
-	
-	//Adds a blank line to the table and selects it, also adding a corresponding
-	//empty string item to the data source array
-	@IBAction func addMedToTable(_ sender: NSButton) {
-		//Add the info from the textfield to the medList array
-		assessmentList.insert("", at: 0)
-		//Add the new info into the tableView (not sure exactly how this works)
-		assessmentTableView.insertRows(at: IndexSet(integer: 0), withAnimation: NSTableView.AnimationOptions.slideDown)
-		assessmentTableView.selectRowIndexes(IndexSet(integer: 0), byExtendingSelection: false)
-		
-	}
-	
-	//Attached to the table's Table Cell View prototype via the classes First Responder
-	//updates the data source array with any changes made to the table items.
-	@IBAction func updateArrayWithEdit(_ sender:Any) {
-		let currentRow = assessmentTableView.row(for: sender as! NSView)
-		print(currentRow)
-		
-		if let textField = sender as? NSTextField {
-			let textValue = textField.stringValue
-			assessmentList.remove(at: currentRow)
-			assessmentList.insert(textValue, at: currentRow)
-		}
-		
-		
-	}
-		
-	//Removes the selected row from the table and the corresponding
-	//item from the data source array
-	@IBAction func removeRowFromTable(_ sender: NSButton) {
-		let row = assessmentTableView.selectedRow
-		if row != -1 {
-			assessmentList.remove(at: row)
-			let indexSet = IndexSet(integer:row)
-			assessmentTableView.removeRows(at:indexSet, withAnimation:NSTableView.AnimationOptions.effectFade)
-		}
-	}
+    
+    //MARK: Table Handling Functions
+    func numberOfRows(in tableView: NSTableView) -> Int {
+        return assessmentList.count
+    }
+    
+    //Set up the tableview with the data from the assessmentList array
+    func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
+        var result:NSTableCellView
+        result = tableView.makeView(withIdentifier: (tableColumn?.identifier)!, owner: self) as! NSTableCellView
+        result.textField?.stringValue = assessmentList[row]
+        
+        return result
+    }
+    
+    @IBAction func getMedsFromFile(_ sender: NSButton) {
+        let panel = NSOpenPanel()
+        panel.canChooseDirectories = true
+        panel.canChooseFiles = true
+        panel.allowedFileTypes = ["txt"]
+        
+        panel.beginSheetModal(for: self.view.window!, completionHandler: {(returnCode) -> Void in
+            if returnCode == NSApplication.ModalResponse.OK {
+                let message = panel.url?.path
+                self.assessmentString = self.processAssessmentFromNoteAt(message)
+                self.performSegue(withIdentifier: NSStoryboardSegue.Identifier(rawValue: "showCurrentAssessment"), sender: nil)
+            }
+        })
+        
+        
+    }
+    
+    func processAssessmentFromNoteAt(_ url: String?) -> String {
+        var fullText = String()
+        do {
+            fullText = try String(contentsOfFile: url!, encoding: String.Encoding.utf8)
+        } catch {
+            return ""
+        }
+        
+        let medications = fullText.findRegexMatchBetween("Problems:", and: "S:")?.removeWhiteSpace() ?? ""
+        
+        return medications
+    }
+    
+    override func prepare(for segue: NSStoryboardSegue, sender: Any?) {
+        if segue.identifier!.rawValue == "showCurrentAssessment" {
+            if let toViewController = segue.destinationController as? CurrentAssessmentController {
+                //For the delegate to work, it needs to be assigned here
+                //rather than in view did load.  Because it's a modal window?
+                toViewController.assessmentReloadDelegate = self
+                toViewController.assessmentString = assessmentString
+            }
+        }
+    }
+    
+    //When the modal window dismisses, it needs to tell the main view to update
+    //the assessment table with the data it passes back using delegation
+    func currentAssessmentWillBeDismissed(sender: CurrentAssessmentController) {
+        self.assessmentTableView.reloadData()
+    }
+    
+    @IBAction func processAssessmentTable(_ sender: Any) {
+        if !assessmentList.isEmpty {
+            let results = assessmentList.map {$0.prependDashToLine()}.joined(separator: "\n")
+            
+            let myPasteboard = NSPasteboard.general
+            myPasteboard.clearContents()
+            myPasteboard.setString(results, forType: NSPasteboard.PasteboardType.string)
+        }
+        print(assessmentList)
+    }
+    
+    //Adds a blank line to the table and selects it, also adding a corresponding
+    //empty string item to the data source array
+    @IBAction func addMedToTable(_ sender: NSButton) {
+        //Add the info from the textfield to the medList array
+        assessmentList.insert("", at: 0)
+        //Add the new info into the tableView (not sure exactly how this works)
+        assessmentTableView.insertRows(at: IndexSet(integer: 0), withAnimation: NSTableView.AnimationOptions.slideDown)
+        assessmentTableView.selectRowIndexes(IndexSet(integer: 0), byExtendingSelection: false)
+        
+    }
+    
+    //Attached to the table's Table Cell View prototype via the classes First Responder
+    //updates the data source array with any changes made to the table items.
+    @IBAction func updateArrayWithEdit(_ sender:Any) {
+        let currentRow = assessmentTableView.row(for: sender as! NSView)
+        print(currentRow)
+        
+        if let textField = sender as? NSTextField {
+            let textValue = textField.stringValue
+            assessmentList.remove(at: currentRow)
+            assessmentList.insert(textValue, at: currentRow)
+        }
+        
+        
+    }
+        
+    //Removes the selected row from the table and the corresponding
+    //item from the data source array
+    @IBAction func removeRowFromTable(_ sender: NSButton) {
+        let row = assessmentTableView.selectedRow
+        if row != -1 {
+            assessmentList.remove(at: row)
+            let indexSet = IndexSet(integer:row)
+            assessmentTableView.removeRows(at:indexSet, withAnimation:NSTableView.AnimationOptions.effectFade)
+        }
+    }
 }
