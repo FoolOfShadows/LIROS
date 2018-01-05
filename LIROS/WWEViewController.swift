@@ -71,4 +71,15 @@ class WWEViewController: NSViewController {
 		}
 	}
 	
+	@IBAction func ifYesThenNoBoxOff(_ sender: NSButton) {
+		let buttons = wweTabView.getListOfButtons()
+		if sender.title == "Yes" && sender.state == .on {
+			let noButton = buttons.filter {$0.tag == sender.tag + 1}
+			noButton[0].state = .off
+		} else if sender.title == "No" && sender.state == .on {
+			let yesButton = buttons.filter {$0.tag == sender.tag - 1}
+			yesButton[0].state = .off
+		}
+	}
+	
 }

@@ -53,11 +53,9 @@ func processROSForm(_ sections:[(sectionName:String, list:[(title:String, state:
 		let processedSection = processROSSectionsFor(section.sectionName, with: section.list)
 		if !processedSection.positives.isEmpty {
 		tempResults.positiveResults.append(processedSection.positives)
-			print("Section: \(section.sectionName) is reporting a positive result")
 		}
 		if !processedSection.negatives.isEmpty {
 		tempResults.negativeResults.append(processedSection.negatives)
-			print("Section: \(section.sectionName) is reporting a negative result")
 		}
 	}
 	
@@ -65,12 +63,10 @@ func processROSForm(_ sections:[(sectionName:String, list:[(title:String, state:
 	print("Negative results array is: \(tempResults.negativeResults)")
 	
 	if (tempResults.positiveResults != [""]) && (!tempResults.positiveResults.isEmpty){
-		print("+ results array is not empty")
 		let filteredPositives = tempResults.positiveResults.filter{ $0 != ""}
 		finalPositives = "(+) " + filteredPositives.joined(separator: "; ").replacingOccurrences(of: "\n", with: "") + "\n"
 	}
 	if (tempResults.negativeResults != [""]) && (!tempResults.negativeResults.isEmpty) {
-		print("- results array is not empty")
 		let filteredNegatives = tempResults.negativeResults.filter{ $0 != "" }
 		finalNegatives = "(-) " + filteredNegatives.joined(separator: "; ").replacingOccurrences(of: "\n", with: "") + ".  "
 	}
@@ -79,9 +75,9 @@ func processROSForm(_ sections:[(sectionName:String, list:[(title:String, state:
 	print(finalNegatives)
 	
 	if finalPositives != "" || finalNegatives != "" {
-		finalResults = "REVIEW OF SYSTEMS: ROS as per HPI and:\n" + finalPositives + finalNegatives + "All other systems reviewed and are negative.\nPMH, PSH, SHX, FHX, Meds reviewed."
+		finalResults = "REVIEW OF SYSTEMS - ROS as per HPI and:\n" + finalPositives + finalNegatives + "All other systems reviewed and are negative.\nPMH, PSH, SHX, FHX, Meds reviewed."
 	} else {
-		finalResults = "REVIEW OF SYSTEMS: ROS as per HPI.  All systems reviewed and are negative.\nPMH, PSH, SHX, FHX, Meds reviewed."
+		finalResults = "REVIEW OF SYSTEMS - ROS as per HPI.  All systems reviewed and are negative.\nPMH, PSH, SHX, FHX, Meds reviewed."
 	}
 	
 	

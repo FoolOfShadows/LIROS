@@ -82,6 +82,17 @@ class DMViewController: NSViewController {
 		fbsPlanCombo.clearComboBox(menuItems: checkingFBSList)
 	}
 	
+	@IBAction func yesNoExclusive(_ sender: NSButton) {
+		let buttons = dmTabView.getListOfButtons()
+		if sender.title == "Yes" && sender.state == .on {
+			let noButton = buttons.filter {$0.tag == sender.tag + 1}
+			noButton[0].state = .off
+		} else if sender.title == "No" && sender.state == .on {
+			let yesButton = buttons.filter {$0.tag == sender.tag - 1}
+			yesButton[0].state = .off
+		}
+	}
+	
 	@IBAction func ifNoThenAllOtherBoxesOff(_ sender: NSButton) {
 		if let buttons = sender.superview?.subviews {
 			for button in buttons {

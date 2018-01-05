@@ -5643,6 +5643,9 @@ or bending</string>
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system" size="16"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="deselectNoProblems:" target="eTZ-0b-krk" id="RCY-s5-CA2"/>
+                                            </connections>
                                         </button>
                                         <button fixedFrame="YES" tag="4" translatesAutoresizingMaskIntoConstraints="NO" id="IXf-w4-2Ci">
                                             <rect key="frame" x="18" y="336" width="112" height="20"/>
@@ -6182,6 +6185,9 @@ or bending</string>
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system" size="16"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="deselectNoProblems:" target="mCl-Cg-YdW" id="0fP-GF-G67"/>
+                                            </connections>
                                         </button>
                                         <button fixedFrame="YES" tag="2" translatesAutoresizingMaskIntoConstraints="NO" id="whz-Vt-Pyz">
                                             <rect key="frame" x="20" y="40" width="151" height="20"/>
@@ -6190,6 +6196,9 @@ or bending</string>
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system" size="16"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="deselectNoProblems:" target="mCl-Cg-YdW" id="y1a-dT-TGa"/>
+                                            </connections>
                                         </button>
                                         <button fixedFrame="YES" tag="2" translatesAutoresizingMaskIntoConstraints="NO" id="rpD-in-QrM">
                                             <rect key="frame" x="20" y="172" width="84" height="20"/>
@@ -6198,6 +6207,9 @@ or bending</string>
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system" size="16"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="deselectNoProblems:" target="mCl-Cg-YdW" id="oyi-iN-YZ1"/>
+                                            </connections>
                                         </button>
                                         <button fixedFrame="YES" tag="2" translatesAutoresizingMaskIntoConstraints="NO" id="hOC-cb-3HA">
                                             <rect key="frame" x="20" y="194" width="99" height="20"/>
@@ -6206,6 +6218,9 @@ or bending</string>
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system" size="16"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="deselectNoProblems:" target="mCl-Cg-YdW" id="RmV-0j-N7F"/>
+                                            </connections>
                                         </button>
                                         <button fixedFrame="YES" tag="2" translatesAutoresizingMaskIntoConstraints="NO" id="qba-lt-bFs">
                                             <rect key="frame" x="20" y="128" width="173" height="20"/>
@@ -6214,6 +6229,9 @@ or bending</string>
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system" size="16"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="deselectNoProblems:" target="mCl-Cg-YdW" id="1bp-aU-yiy"/>
+                                            </connections>
                                         </button>
                                         <button fixedFrame="YES" tag="2" translatesAutoresizingMaskIntoConstraints="NO" id="6Js-AT-COZ">
                                             <rect key="frame" x="20" y="18" width="63" height="20"/>
@@ -6222,6 +6240,9 @@ or bending</string>
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system" size="16"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="deselectNoProblems:" target="mCl-Cg-YdW" id="zbt-4J-iSp"/>
+                                            </connections>
                                         </button>
                                         <button fixedFrame="YES" tag="2" translatesAutoresizingMaskIntoConstraints="NO" id="LmK-jK-JTE">
                                             <rect key="frame" x="20" y="106" width="122" height="20"/>
@@ -6230,6 +6251,9 @@ or bending</string>
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system" size="16"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="deselectNoProblems:" target="mCl-Cg-YdW" id="Vw3-st-9on"/>
+                                            </connections>
                                         </button>
                                         <button fixedFrame="YES" tag="2" translatesAutoresizingMaskIntoConstraints="NO" id="foO-gA-qU4">
                                             <rect key="frame" x="20" y="62" width="142" height="20"/>
@@ -6238,6 +6262,9 @@ or bending</string>
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system" size="16"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="deselectNoProblems:" target="mCl-Cg-YdW" id="72S-r3-Ab7"/>
+                                            </connections>
                                         </button>
                                         <button fixedFrame="YES" tag="2" translatesAutoresizingMaskIntoConstraints="NO" id="Rd9-GD-Ekm">
                                             <rect key="frame" x="20" y="260" width="95" height="20"/>
@@ -6246,6 +6273,9 @@ or bending</string>
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system" size="16"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="deselectNoProblems:" target="mCl-Cg-YdW" id="M2i-Ps-ALL"/>
+                                            </connections>
                                         </button>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OaF-kQ-lfM">
                                             <rect key="frame" x="18" y="289" width="44" height="17"/>
@@ -6272,6 +6302,9 @@ or bending</string>
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system" size="16"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="deselectNoProblems:" target="mCl-Cg-YdW" id="NjE-aD-KMd"/>
+                                            </connections>
                                         </button>
                                         <button fixedFrame="YES" tag="2" translatesAutoresizingMaskIntoConstraints="NO" id="diW-0d-e00">
                                             <rect key="frame" x="20" y="150" width="85" height="20"/>
@@ -6280,6 +6313,9 @@ or bending</string>
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system" size="16"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="deselectNoProblems:" target="mCl-Cg-YdW" id="NMi-Al-dXf"/>
+                                            </connections>
                                         </button>
                                         <button fixedFrame="YES" tag="2" translatesAutoresizingMaskIntoConstraints="NO" id="tne-PY-n7s">
                                             <rect key="frame" x="20" y="238" width="87" height="20"/>
@@ -6288,6 +6324,9 @@ or bending</string>
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system" size="16"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="deselectNoProblems:" target="mCl-Cg-YdW" id="8sj-x9-BB9"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                 </view>
@@ -6303,6 +6342,17 @@ or bending</string>
                                     <action selector="processHPIAndContinue:" target="mCl-Cg-YdW" id="ihJ-nT-YOc"/>
                                 </connections>
                             </button>
+                            <button fixedFrame="YES" tag="2" translatesAutoresizingMaskIntoConstraints="NO" id="b4B-zq-Xwo">
+                                <rect key="frame" x="644" y="75" width="258" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="check" title="No new problems" bezelStyle="regularSquare" imagePosition="left" inset="2" id="ccS-3J-Bcm" customClass="RedGreenCheckbox" customModule="LIROS" customModuleProvider="target">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system" size="16"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="noOtherSelectionsActive:" target="mCl-Cg-YdW" id="4Ov-Te-eMh"/>
+                                </connections>
+                            </button>
                         </subviews>
                     </view>
                     <connections>
@@ -6312,6 +6362,7 @@ or bending</string>
                         <outlet property="complaintsBox" destination="o2d-6X-nhU" id="rtV-BL-opA"/>
                         <outlet property="hpiView" destination="84H-dI-3u4" id="aYf-J8-cl1"/>
                         <outlet property="htnBox" destination="3dX-yb-HPl" id="PHt-Lv-Hhy"/>
+                        <outlet property="noProblemsCheckbox" destination="b4B-zq-Xwo" id="Xpq-dQ-yPs"/>
                         <outlet property="onsetView" destination="Dzf-LZ-6kl" id="rhc-Aa-K6k"/>
                         <outlet property="phlegmColorCombo" destination="NTV-KD-8oP" id="y2I-jm-NCE"/>
                         <outlet property="uriBox" destination="IJe-eA-MaI" id="8KT-kJ-rIg"/>
@@ -7802,6 +7853,9 @@ or bending</string>
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="yesNoExclusive:" target="S7A-4v-TYW" id="Gzn-Zu-d8k"/>
+                                            </connections>
                                         </button>
                                         <button fixedFrame="YES" tag="6" translatesAutoresizingMaskIntoConstraints="NO" id="EwM-67-eqm">
                                             <rect key="frame" x="191" y="162" width="40" height="18"/>
@@ -7810,6 +7864,9 @@ or bending</string>
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="yesNoExclusive:" target="S7A-4v-TYW" id="abE-YS-kK8"/>
+                                            </connections>
                                         </button>
                                         <button fixedFrame="YES" tag="7" translatesAutoresizingMaskIntoConstraints="NO" id="MmG-hh-Z2G">
                                             <rect key="frame" x="123" y="133" width="44" height="18"/>
@@ -7818,6 +7875,9 @@ or bending</string>
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="yesNoExclusive:" target="S7A-4v-TYW" id="97n-QB-UHQ"/>
+                                            </connections>
                                         </button>
                                         <button fixedFrame="YES" tag="8" translatesAutoresizingMaskIntoConstraints="NO" id="1aq-At-PUg">
                                             <rect key="frame" x="169" y="133" width="40" height="18"/>
@@ -7826,6 +7886,9 @@ or bending</string>
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="yesNoExclusive:" target="S7A-4v-TYW" id="UBd-wW-V0r"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                 </view>
@@ -10718,6 +10781,9 @@ Gw
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="ifYesThenNoBoxOff:" target="kEH-4v-Vs4" id="0qt-Ym-Sub"/>
+                                            </connections>
                                         </button>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vaq-0W-jg2">
                                             <rect key="frame" x="18" y="660" width="69" height="17"/>
@@ -10735,6 +10801,9 @@ Gw
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="ifYesThenNoBoxOff:" target="kEH-4v-Vs4" id="MtZ-RT-cjF"/>
+                                            </connections>
                                         </button>
                                         <button fixedFrame="YES" tag="28" translatesAutoresizingMaskIntoConstraints="NO" id="Nli-g8-IEe">
                                             <rect key="frame" x="113" y="197" width="44" height="18"/>
@@ -10743,6 +10812,9 @@ Gw
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="ifYesThenNoBoxOff:" target="kEH-4v-Vs4" id="1Oh-w8-B8g"/>
+                                            </connections>
                                         </button>
                                         <button fixedFrame="YES" tag="14" translatesAutoresizingMaskIntoConstraints="NO" id="ST8-38-Ae1">
                                             <rect key="frame" x="165" y="397" width="44" height="18"/>
@@ -10751,6 +10823,9 @@ Gw
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="ifYesThenNoBoxOff:" target="kEH-4v-Vs4" id="Xjg-tR-UYD"/>
+                                            </connections>
                                         </button>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LzO-nk-3cN">
                                             <rect key="frame" x="18" y="41" width="117" height="17"/>
@@ -10832,6 +10907,9 @@ Gw
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="ifYesThenNoBoxOff:" target="kEH-4v-Vs4" id="ZSr-UB-HpK"/>
+                                            </connections>
                                         </button>
                                         <button fixedFrame="YES" tag="30" translatesAutoresizingMaskIntoConstraints="NO" id="Am2-e4-1YB">
                                             <rect key="frame" x="99" y="172" width="44" height="18"/>
@@ -10840,6 +10918,9 @@ Gw
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="ifYesThenNoBoxOff:" target="kEH-4v-Vs4" id="Lm7-RO-vkr"/>
+                                            </connections>
                                         </button>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qDq-36-gPf">
                                             <rect key="frame" x="21" y="554" width="149" height="17"/>
@@ -10857,6 +10938,9 @@ Gw
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="ifYesThenNoBoxOff:" target="kEH-4v-Vs4" id="UYU-eT-86l"/>
+                                            </connections>
                                         </button>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q7j-oU-e0v">
                                             <rect key="frame" x="18" y="123" width="54" height="17"/>
@@ -10874,6 +10958,9 @@ Gw
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="ifYesThenNoBoxOff:" target="kEH-4v-Vs4" id="EUj-Bi-qSi"/>
+                                            </connections>
                                         </button>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2uE-Y6-E0g">
                                             <rect key="frame" x="18" y="96" width="161" height="17"/>
@@ -10900,6 +10987,9 @@ Gw
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="ifYesThenNoBoxOff:" target="kEH-4v-Vs4" id="cDn-hL-8bj"/>
+                                            </connections>
                                         </button>
                                         <button fixedFrame="YES" tag="5" translatesAutoresizingMaskIntoConstraints="NO" id="BDq-B2-BkV">
                                             <rect key="frame" x="81" y="577" width="70" height="18"/>
@@ -10925,6 +11015,9 @@ Gw
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="ifYesThenNoBoxOff:" target="kEH-4v-Vs4" id="51C-aU-dX5"/>
+                                            </connections>
                                         </button>
                                         <button fixedFrame="YES" tag="20" translatesAutoresizingMaskIntoConstraints="NO" id="Kqp-Wr-jXh">
                                             <rect key="frame" x="110" y="324" width="44" height="18"/>
@@ -10933,6 +11026,9 @@ Gw
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="ifYesThenNoBoxOff:" target="kEH-4v-Vs4" id="pCW-uw-Ggx"/>
+                                            </connections>
                                         </button>
                                         <button fixedFrame="YES" tag="11" translatesAutoresizingMaskIntoConstraints="NO" id="Bzf-9N-91N">
                                             <rect key="frame" x="71" y="476" width="51" height="18"/>
@@ -10958,6 +11054,9 @@ Gw
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="ifYesThenNoBoxOff:" target="kEH-4v-Vs4" id="JF4-mz-F45"/>
+                                            </connections>
                                         </button>
                                         <button fixedFrame="YES" tag="19" translatesAutoresizingMaskIntoConstraints="NO" id="sSv-OI-4nZ">
                                             <rect key="frame" x="177" y="348" width="44" height="18"/>
@@ -10966,6 +11065,9 @@ Gw
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="ifYesThenNoBoxOff:" target="kEH-4v-Vs4" id="sgE-wv-zXx"/>
+                                            </connections>
                                         </button>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ede-7p-WSj">
                                             <rect key="frame" x="18" y="603" width="62" height="17"/>
@@ -11001,6 +11103,9 @@ Gw
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="ifYesThenNoBoxOff:" target="kEH-4v-Vs4" id="QE2-At-2ez"/>
+                                            </connections>
                                         </button>
                                         <textField verticalHuggingPriority="750" fixedFrame="YES" tag="2" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gik-OV-WgL">
                                             <rect key="frame" x="100" y="629" width="85" height="22"/>
@@ -11081,6 +11186,9 @@ Gw
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="ifYesThenNoBoxOff:" target="kEH-4v-Vs4" id="JP6-ua-ESf"/>
+                                            </connections>
                                         </button>
                                         <textField verticalHuggingPriority="750" fixedFrame="YES" tag="1" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qkn-Aw-Wzv">
                                             <rect key="frame" x="93" y="657" width="85" height="22"/>
@@ -11098,6 +11206,9 @@ Gw
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="ifYesThenNoBoxOff:" target="kEH-4v-Vs4" id="Aeb-OW-e8Z"/>
+                                            </connections>
                                         </button>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ycB-0i-5ld">
                                             <rect key="frame" x="207" y="501" width="33" height="17"/>
@@ -11115,6 +11226,9 @@ Gw
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="ifYesThenNoBoxOff:" target="kEH-4v-Vs4" id="64r-p5-8eA"/>
+                                            </connections>
                                         </button>
                                         <button fixedFrame="YES" tag="7" translatesAutoresizingMaskIntoConstraints="NO" id="TNs-ND-lse">
                                             <rect key="frame" x="231" y="555" width="40" height="18"/>
@@ -11123,6 +11237,9 @@ Gw
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="ifYesThenNoBoxOff:" target="kEH-4v-Vs4" id="5he-hA-hHO"/>
+                                            </connections>
                                         </button>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iQa-je-1LU">
                                             <rect key="frame" x="40" y="529" width="43" height="17"/>
@@ -11149,6 +11266,9 @@ Gw
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="ifYesThenNoBoxOff:" target="kEH-4v-Vs4" id="0eD-Wc-Qq8"/>
+                                            </connections>
                                         </button>
                                         <popUpButton verticalHuggingPriority="750" fixedFrame="YES" tag="36" translatesAutoresizingMaskIntoConstraints="NO" id="AL9-bV-JLi">
                                             <rect key="frame" x="181" y="90" width="106" height="26"/>
@@ -11186,6 +11306,9 @@ Gw
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="ifYesThenNoBoxOff:" target="kEH-4v-Vs4" id="oZr-Qa-ZwF"/>
+                                            </connections>
                                         </button>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ei6-iI-0Ng">
                                             <rect key="frame" x="189" y="450" width="33" height="17"/>
@@ -11203,6 +11326,9 @@ Gw
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="ifYesThenNoBoxOff:" target="kEH-4v-Vs4" id="wmd-Ch-MCJ"/>
+                                            </connections>
                                         </button>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5EH-NB-nNk">
                                             <rect key="frame" x="18" y="148" width="143" height="17"/>
@@ -11229,6 +11355,9 @@ Gw
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="ifYesThenNoBoxOff:" target="kEH-4v-Vs4" id="eqS-LE-B4r"/>
+                                            </connections>
                                         </button>
                                         <button fixedFrame="YES" tag="24" translatesAutoresizingMaskIntoConstraints="NO" id="4ou-Ip-3Pn">
                                             <rect key="frame" x="56" y="246" width="44" height="18"/>
@@ -11237,6 +11366,9 @@ Gw
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="ifYesThenNoBoxOff:" target="kEH-4v-Vs4" id="DDP-2C-C6g"/>
+                                            </connections>
                                         </button>
                                         <button fixedFrame="YES" tag="27" translatesAutoresizingMaskIntoConstraints="NO" id="5XN-co-yWg">
                                             <rect key="frame" x="111" y="222" width="44" height="18"/>
@@ -11245,6 +11377,9 @@ Gw
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="ifYesThenNoBoxOff:" target="kEH-4v-Vs4" id="vPA-is-35P"/>
+                                            </connections>
                                         </button>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sLx-cQ-nB5">
                                             <rect key="frame" x="18" y="241" width="34" height="17"/>
@@ -11262,6 +11397,9 @@ Gw
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="ifYesThenNoBoxOff:" target="kEH-4v-Vs4" id="vv3-rK-tnS"/>
+                                            </connections>
                                         </button>
                                         <button fixedFrame="YES" tag="18" translatesAutoresizingMaskIntoConstraints="NO" id="RIF-sp-MvK">
                                             <rect key="frame" x="123" y="348" width="44" height="18"/>
@@ -11270,6 +11408,9 @@ Gw
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="ifYesThenNoBoxOff:" target="kEH-4v-Vs4" id="aU9-oV-ZPF"/>
+                                            </connections>
                                         </button>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KDZ-A1-KI7">
                                             <rect key="frame" x="21" y="453" width="89" height="17"/>
@@ -11296,6 +11437,9 @@ Gw
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="ifYesThenNoBoxOff:" target="kEH-4v-Vs4" id="owe-0j-OAv"/>
+                                            </connections>
                                         </button>
                                         <button fixedFrame="YES" tag="25" translatesAutoresizingMaskIntoConstraints="NO" id="hbo-o7-Zwm">
                                             <rect key="frame" x="110" y="246" width="44" height="18"/>
@@ -11304,6 +11448,9 @@ Gw
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="ifYesThenNoBoxOff:" target="kEH-4v-Vs4" id="APJ-pT-8YV"/>
+                                            </connections>
                                         </button>
                                         <button fixedFrame="YES" tag="10" translatesAutoresizingMaskIntoConstraints="NO" id="3ri-Ox-zXM">
                                             <rect key="frame" x="21" y="476" width="46" height="18"/>
@@ -11818,6 +11965,9 @@ Gw
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="ifYesThenNoBoxOff:" target="kEH-4v-Vs4" id="k4n-Tk-Bq4"/>
+                                            </connections>
                                         </button>
                                         <button fixedFrame="YES" tag="70" translatesAutoresizingMaskIntoConstraints="NO" id="MWD-Ok-uan">
                                             <rect key="frame" x="82" y="332" width="44" height="18"/>
@@ -11826,6 +11976,9 @@ Gw
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="ifYesThenNoBoxOff:" target="kEH-4v-Vs4" id="uNC-CJ-u6r"/>
+                                            </connections>
                                         </button>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HWk-lL-yf8">
                                             <rect key="frame" x="30" y="59" width="102" height="17"/>

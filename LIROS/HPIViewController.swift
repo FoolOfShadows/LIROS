@@ -17,6 +17,7 @@ class HPIViewController: NSViewController {
 	@IBOutlet weak var chestPainBox: NSBox!
 	@IBOutlet weak var htnBox: NSBox!
 	@IBOutlet weak var cholesterolBox: NSBox!
+	@IBOutlet weak var noProblemsCheckbox: NSButton!
 	
 	//@IBOutlet weak var onsetView: NSTextField!
 	@IBOutlet weak var phlegmColorCombo: NSComboBox!
@@ -28,6 +29,16 @@ class HPIViewController: NSViewController {
         // Do view setup here.
 		phlegmColorCombo.clearComboBox(menuItems: phlegmColors)
     }
+	
+	override func viewDidAppear() {
+		super.viewDidAppear()
+		addSelectorToButtonsInView(complaintsBox)
+		addSelectorToButtonsInView(uriBox)
+		addSelectorToButtonsInView(utiBox)
+		addSelectorToButtonsInView(chestPainBox)
+		addSelectorToButtonsInView(htnBox)
+		addSelectorToButtonsInView(cholesterolBox)
+	}
 	
 	func getTextFieldsFrom(_ view:NSView) -> [NSTextField] {
 		var results = [NSTextField]()
@@ -95,6 +106,7 @@ class HPIViewController: NSViewController {
 	
 	@IBAction func processHPI(_ sender: Any) {
 		var resultsArray = [String]()
+		var results = String()
 		//process Complaints box
 		resultsArray.append(processHPISection(.symptoms, usingData: getTitlesOfActiveButtonsFrom(complaintsBox)))
 		resultsArray.append(processHPISection(.uti, usingData: getTitlesOfActiveButtonsFrom(utiBox)))
@@ -102,20 +114,53 @@ class HPIViewController: NSViewController {
 		resultsArray.append(processHPISection(.chestpain, usingData: getTitlesOfActiveButtonsFrom(chestPainBox)))
 		resultsArray.append(processHPISection(.htn, usingData: getTitlesOfActiveButtonsFrom(htnBox)))
 		resultsArray.append(processHPISection(.hichol, usingData: getTitlesOfActiveButtonsFrom(cholesterolBox)))
+//		if noProblemsCheckbox.state == .on {
+//			resultsArray.append("Patient reports no new problems or concerns today.")
+//		}
 		
-		let finalArray = resultsArray.filter {$0 != ""}
-		if !finalArray.isEmpty {
-//			if !onsetView.stringValue.isEmpty {
-//				finalArray.append("Onset: \(onsetView.stringValue)")
-//			}
-			print(finalArray.joined(separator: "\n"))
+		let hpiResults = resultsArray.filter {$0 != ""}
+		if !hpiResults.isEmpty {
+			results = hpiResults.joined(separator: "\n")
+		}  else if noProblemsCheckbox.state == .on {
+			results = "Patient reports no new problems or concerns today."
+		}
+		if !results.isEmpty {
 			//Clear the system clipboard
 			let pasteBoard = NSPasteboard.general
 			pasteBoard.clearContents()
 			//Set the system clipboard to the final text
-			pasteBoard.setString(finalArray.joined(separator: "\n"), forType: NSPasteboard.PasteboardType.string)
+			pasteBoard.setString(results, forType: NSPasteboard.PasteboardType.string)
 		}
 		
+	}
+	
+	@IBAction func noOtherSelectionsActive(_ sender: NSButton) {
+		if sender.state == .on {
+		complaintsBox.clearControllers()
+		uriBox.clearControllers()
+		utiBox.clearControllers()
+		chestPainBox.clearControllers()
+		htnBox.clearControllers()
+		cholesterolBox.clearControllers()
+		phlegmColorCombo.clearComboBox(menuItems: phlegmColors)
+		}
+	}
+	
+	func addSelectorToButtonsInView(_ view:NSView) {
+		for item in view.subviews {
+			if let button = item as? NSButton {
+				button.target = self
+				button.action = #selector(deselectNoProblems)
+			} else {
+				addSelectorToButtonsInView(item)
+			}
+		}
+	}
+	
+	@objc func deselectNoProblems(_ sender:NSButton) {
+		if sender.state != .off {
+		noProblemsCheckbox.state = .off
+		}
 	}
 	
 	@IBAction func processHPIAndContinue(_ sender: Any) {

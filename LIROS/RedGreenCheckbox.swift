@@ -8,7 +8,7 @@
 
 import Cocoa
 
-//Creates a square checkbox button that is white when OFF, red when ON, and green when MIXED.
+//Creates a circular checkbox button that is white when OFF, red when ON, and green when MIXED.
 //The checkbox button cell needs to be set to this class rather than the button itself.
 //To keep the top of the circle from clipping the heigth of the
 //controller needs to be set to at least 20 (the default in IB is 19)
@@ -20,7 +20,57 @@ class RedGreenCheckbox: NSButtonCell {
 	var offStateColor: NSColor = NSColor.white
 	@IBInspectable
 	var mixedStateColor: NSColor = NSColor.red
+	
+	override func drawImage(_ image: NSImage, withFrame frame: NSRect, in controlView: NSView) {
+		
+		let path = NSBezierPath(ovalIn: frame)
+		//let path2 = NSBezierPath(roundedRect: frame, xRadius: 0.7, yRadius: 0.7)
+		
+		NSColor.black.setFill()
+		//NSRectFill(frame)
+		path.fill()
+		
+		let insetRect = NSInsetRect(frame, 0.5, 0.5)
+		let insetPath = NSBezierPath(ovalIn: insetRect)
+		//NSColor.white.setFill()
+		//NSRectFill(NSInsetRect(frame, 1, 1))
+		
+		if self.allowsMixedState {
+			if self.state == .on {
+				//NSColor.greenColor().setFill()
+				onStateColor.setFill()
+			} else if self.state == .off {
+				//NSColor.whiteColor().setFill()
+				offStateColor.setFill()
+			} else if self.state == .mixed {
+				//NSColor.redColor().setFill()
+				mixedStateColor.setFill()
+			}
+		} else {
+			if self.state == .on {
+				mixedStateColor.setFill()
+			} else if self.state == .off {
+				//NSColor.whiteColor().setFill()
+				offStateColor.setFill()
+				
+			}
+		}
+		
+		insetPath.fill()
+		//NSRectFill(NSInsetRect(frame, 4, 4))
+		
+	}
+}
 
+@IBDesignable
+class RedCheckbox: NSButtonCell {
+	@IBInspectable
+	var onStateColor: NSColor = NSColor.red
+	@IBInspectable
+	var offStateColor: NSColor = NSColor.white
+//	@IBInspectable
+//	var mixedStateColor: NSColor = NSColor.red
+	
 	override func drawImage(_ image: NSImage, withFrame frame: NSRect, in controlView: NSView) {
 		
 		let path = NSBezierPath(ovalIn: frame)
@@ -42,22 +92,16 @@ class RedGreenCheckbox: NSButtonCell {
 		} else if self.state == .off {
 			//NSColor.whiteColor().setFill()
 			offStateColor.setFill()
-		} else if self.state == .mixed {
+		} /*else if self.state == .mixed {
 			//NSColor.redColor().setFill()
 			mixedStateColor.setFill()
-		}
+		}*/
 		insetPath.fill()
 		//NSRectFill(NSInsetRect(frame, 4, 4))
 		
 	}
-	
 }
 
-@IBDesignable class SlightlyBiggerCheckBoxButton: NSButton {
-	override func draw(_ dirtyRect: NSRect) {
-		super.draw(dirtyRect)
-	}
-}
 
 //This version makes a circular controller rather than rectangular box
 //To keep the top of the circle from clipping the heigth of the
