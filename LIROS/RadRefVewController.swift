@@ -120,7 +120,7 @@ class RadRefVewController: NSViewController {
 			}
 		case "CT":
 			switch sender.title {
-			case "chest", "orbits", "neck":
+			case "chest", "orbits", "neck", "head":
 				radSidePopup.clearPopUpButton(menuItems: radContrast)
 			case "abdomen":
 				radSidePopup.clearPopUpButton(menuItems: radCTAbSides)
