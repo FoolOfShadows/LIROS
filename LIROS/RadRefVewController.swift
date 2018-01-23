@@ -82,14 +82,14 @@ class RadRefVewController: NSViewController {
 		switch radTypePopup.title {
 		case "MRI":
 			switch sender.title {
-			case "brain", "chest":
+			case "brain", "chest", "orbits", "neck", "pelvis":
 				radSidePopup.clearPopUpButton(menuItems: radContrast)
 			case "spine":
 				radSidePopup.clearPopUpButton(menuItems: radSpineSide)
 			case "abdomen":
 				radSidePopup.clearPopUpButton(menuItems: radMRIAbSides)
 			case "extremity":
-				radSidePopup.clearPopUpButton(menuItems: radExtremeties)
+				radSidePopup.clearPopUpButton(menuItems: radExtremetiesContrast)
 			default:
 				radSidePopup.clearPopUpButton(menuItems: radEmptySide)
 			}
@@ -120,7 +120,7 @@ class RadRefVewController: NSViewController {
 			}
 		case "CT":
 			switch sender.title {
-			case "brain", "chest":
+			case "chest", "orbits", "neck":
 				radSidePopup.clearPopUpButton(menuItems: radContrast)
 			case "abdomen":
 				radSidePopup.clearPopUpButton(menuItems: radCTAbSides)
