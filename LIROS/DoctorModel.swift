@@ -11,36 +11,50 @@ var commonMedsList = ["", "Amoxicillin 500 mg —-> 1 by mouth three times daily
 let jointList = ["", "Right Knee", "Left Knee", "Both Knees", "Right Shoulder", "Left Shoulder", "Both Shoulders", "Right Elbow", "Left Elbow", "Both Elbows"]
 let kneeList = ["", "Right Knee", "Left Knee", "Both Knees"]
 
-struct DataReview:StructsWithDescriptionOutput {
-    func getOutputFor(_ id:Int) -> String? {
-        switch id {
-        case 1: return "Labs reviewed"
-        case 2: return "Tests reviewed"
-        case 3: return "Out patient fasting labs ordered."
-        case 4: return "Get records"
-        case 5: return "Continue current pain dosage"
-        case 6: return "Colonoscopy results reviewed"
-        case 7: return "Stool card results reviewed"
-        case 8: return "Diabetic eye exam results reviewed"
-        case 9: return "Mammogram results reviewed"
-		case 10: return "Current and hospital discharge medication list reviewed (1111F)."
-        case 15: return "Patient declines colonoscopy"
-        case 16: return "Patient declines stool cards"
-        case 17: return "Patient declines diabetic eye exam"
-        case 18: return "Patient declines mammogram"
-        default: return nil
-        }
-    }
-    
-    func processSectionData(_ data:[(Int, String?)]) -> String {
-        var finalResult = String()
-        let resultsStrings = getDescriptionOfItem(data, fromStruct: self) ?? [String]()
-        
-        if !resultsStrings.isEmpty {
-            finalResult = resultsStrings.joined(separator: "\n")
-        }
-        return finalResult
-    }
+struct DataReview {
+	func processSectionData(_ data:[(Int, String?)]) -> String {
+		var results = String()
+		var resultArray = [String]()
+		var letterType = "(to be determined)"
+		
+		for item in data {
+			switch item.0 {
+			case 25: letterType = item.1!
+			default: continue
+			}
+		}
+		
+		for item in data {
+			switch item.0 {
+			case 1: resultArray.append("Labs reviewed")
+			case 2: resultArray.append( "Tests reviewed")
+			case 3: resultArray.append( "Out patient fasting labs ordered.")
+			case 4: resultArray.append( "Get records")
+			case 5: resultArray.append( "Continue current pain dosage")
+			case 6: resultArray.append( "Colonoscopy results reviewed")
+			case 7: resultArray.append( "Stool card results reviewed")
+			case 8: resultArray.append( "Diabetic eye exam results reviewed")
+			case 9: resultArray.append( "Mammogram results reviewed")
+			case 10: resultArray.append( "Current and hospital discharge medication list reviewed (1111F).")
+			case 11: resultArray.append( "^^Disability forms need to be filled out.")
+			case 12: resultArray.append( "^^Patient needs letter about \(letterType)")
+			case 15: resultArray.append( "Patient declines colonoscopy")
+			case 16: resultArray.append( "Patient declines stool cards")
+			case 17: resultArray.append( "Patient declines diabetic eye exam")
+			case 18: resultArray.append( "Patient declines mammogram")
+			default: continue
+			}
+		}
+		
+		
+		//        var finalResult = String()
+		//        let resultsStrings = getDescriptionOfItem(data, fromStruct: self) ?? [String]()
+		
+		if !resultArray.isEmpty {
+			results = resultArray.joined(separator: "\n")
+		}
+		return results
+	}
 }
 
 struct Education:StructsWithDescriptionOutput {
