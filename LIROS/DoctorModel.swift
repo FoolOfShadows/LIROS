@@ -19,7 +19,7 @@ struct DataReview {
 		
 		for item in data {
 			switch item.0 {
-			case 25: letterType = item.1!
+			case 30: letterType = item.1!
 			default: continue
 			}
 		}
@@ -35,13 +35,15 @@ struct DataReview {
 			case 7: resultArray.append( "Stool card results reviewed")
 			case 8: resultArray.append( "Diabetic eye exam results reviewed")
 			case 9: resultArray.append( "Mammogram results reviewed")
-			case 10: resultArray.append( "Current and hospital discharge medication list reviewed (1111F).")
-			case 11: resultArray.append( "^^Disability forms need to be filled out.")
-			case 12: resultArray.append( "^^Patient needs letter about \(letterType)")
+			case 10: resultArray.append("Available hospital records reviewed.")
+			case 11: resultArray.append( "Current and hospital discharge medication list reviewed (1111F).")
+			case 12: resultArray.append( "^^Disability forms need to be filled out.")
+			case 13: resultArray.append( "^^Patient needs letter about \(letterType)")
 			case 15: resultArray.append( "Patient declines colonoscopy")
 			case 16: resultArray.append( "Patient declines stool cards")
 			case 17: resultArray.append( "Patient declines diabetic eye exam")
 			case 18: resultArray.append( "Patient declines mammogram")
+			case 25: resultArray.append("Patient has requested early refills on pain medications.  Patient admonished regarding health risks and consequences of overtaking pain medications and strongly admonished to take the medication as prescribed and referred to the pain treatment agreement.")
 			default: continue
 			}
 		}
