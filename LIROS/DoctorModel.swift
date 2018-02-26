@@ -30,7 +30,7 @@ struct DataReview {
 			case 2: resultArray.append( "Tests reviewed")
 			case 3: resultArray.append( "Out patient fasting labs ordered.")
 			case 4: resultArray.append( "Get records")
-			case 5: resultArray.append( "Continue current pain dosage")
+			case 5: resultArray.append( "Continue current pain medication dosage")
 			case 6: resultArray.append( "Colonoscopy results reviewed")
 			case 7: resultArray.append( "Stool card results reviewed")
 			case 8: resultArray.append( "Diabetic eye exam results reviewed")
