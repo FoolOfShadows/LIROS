@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14101" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14101"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14109"/>
         <capability name="box content view" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
         <capability name="stacking Non-gravity area distributions on NSStackView" minToolsVersion="7.0" minSystemVersion="10.11"/>
@@ -3054,7 +3054,7 @@ periods</string>
                 </viewController>
                 <customObject id="Euc-MU-Krc" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="871" y="2026"/>
+            <point key="canvasLocation" x="-7429" y="2040"/>
         </scene>
         <!--Doctor-->
         <scene sceneID="5e6-mW-XWT">
@@ -5636,30 +5636,14 @@ Gw
                                 </buttonCell>
                             </button>
                             <box autoresizesSubviews="NO" fixedFrame="YES" borderType="line" title="Hypertension" translatesAutoresizingMaskIntoConstraints="NO" id="3dX-yb-HPl">
-                                <rect key="frame" x="491" y="228" width="262" height="443"/>
+                                <rect key="frame" x="491" y="157" width="262" height="514"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <view key="contentView" id="oio-ZY-Lhx">
-                                    <rect key="frame" x="1" y="1" width="260" height="427"/>
+                                    <rect key="frame" x="1" y="1" width="260" height="498"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <button fixedFrame="YES" tag="4" translatesAutoresizingMaskIntoConstraints="NO" id="rlV-fG-uK1">
-                                            <rect key="frame" x="18" y="179" width="154" height="20"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <buttonCell key="cell" type="check" title="Numbness of face" bezelStyle="regularSquare" imagePosition="left" allowsMixedState="YES" inset="2" id="XnS-5q-pm5" customClass="RedGreenCheckbox" customModule="LIROS" customModuleProvider="target">
-                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                                                <font key="font" metaFont="system" size="16"/>
-                                            </buttonCell>
-                                        </button>
-                                        <button fixedFrame="YES" tag="4" translatesAutoresizingMaskIntoConstraints="NO" id="ZSF-os-V2A">
-                                            <rect key="frame" x="18" y="248" width="177" height="20"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <buttonCell key="cell" type="check" title="TIA - Garbled speech" bezelStyle="regularSquare" imagePosition="left" allowsMixedState="YES" inset="2" id="fKS-0o-S76" customClass="RedGreenCheckbox" customModule="LIROS" customModuleProvider="target">
-                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                                                <font key="font" metaFont="system" size="16"/>
-                                            </buttonCell>
-                                        </button>
                                         <button fixedFrame="YES" tag="4" translatesAutoresizingMaskIntoConstraints="NO" id="k9V-gQ-KRK">
-                                            <rect key="frame" x="18" y="294" width="197" height="39"/>
+                                            <rect key="frame" x="18" y="365" width="197" height="39"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="check" bezelStyle="regularSquare" imagePosition="left" allowsMixedState="YES" inset="2" id="6W0-DK-Qkm" customClass="RedGreenCheckbox" customModule="LIROS" customModuleProvider="target">
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -5668,8 +5652,90 @@ or bending</string>
                                                 <font key="font" metaFont="system" size="16"/>
                                             </buttonCell>
                                         </button>
+                                        <button fixedFrame="YES" tag="4" translatesAutoresizingMaskIntoConstraints="NO" id="IXf-w4-2Ci">
+                                            <rect key="frame" x="18" y="407" width="112" height="20"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="check" title="Blurry vision" bezelStyle="regularSquare" imagePosition="left" allowsMixedState="YES" inset="2" id="qHO-LS-2PD" customClass="RedGreenCheckbox" customModule="LIROS" customModuleProvider="target">
+                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                <font key="font" metaFont="system" size="16"/>
+                                            </buttonCell>
+                                        </button>
+                                        <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yda-aa-Cpy">
+                                            <rect key="frame" x="68" y="456" width="121" height="22"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="HMh-Co-rio">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <button fixedFrame="YES" tag="4" translatesAutoresizingMaskIntoConstraints="NO" id="WTm-od-P17">
+                                            <rect key="frame" x="18" y="430" width="96" height="20"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="check" title="Headache" bezelStyle="regularSquare" imagePosition="left" allowsMixedState="YES" inset="2" id="hMv-eq-WzA" customClass="RedGreenCheckbox" customModule="LIROS" customModuleProvider="target">
+                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                <font key="font" metaFont="system" size="16"/>
+                                            </buttonCell>
+                                        </button>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hGL-US-1w3">
+                                            <rect key="frame" x="18" y="459" width="44" height="17"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Onset:" id="YfW-k5-11q">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <button fixedFrame="YES" tag="4" translatesAutoresizingMaskIntoConstraints="NO" id="he9-Ua-V0W">
+                                            <rect key="frame" x="18" y="316" width="132" height="20"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="check" title="Slurred speech" bezelStyle="regularSquare" imagePosition="left" allowsMixedState="YES" inset="2" id="GRN-5H-GKx" customClass="RedGreenCheckbox" customModule="LIROS" customModuleProvider="target">
+                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                <font key="font" metaFont="system" size="16"/>
+                                            </buttonCell>
+                                        </button>
+                                        <button fixedFrame="YES" tag="4" translatesAutoresizingMaskIntoConstraints="NO" id="ZSF-os-V2A">
+                                            <rect key="frame" x="18" y="293" width="137" height="20"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="check" title="Garbled speech" bezelStyle="regularSquare" imagePosition="left" allowsMixedState="YES" inset="2" id="fKS-0o-S76" customClass="RedGreenCheckbox" customModule="LIROS" customModuleProvider="target">
+                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                <font key="font" metaFont="system" size="16"/>
+                                            </buttonCell>
+                                        </button>
+                                        <button fixedFrame="YES" tag="4" translatesAutoresizingMaskIntoConstraints="NO" id="YY3-SE-pUS">
+                                            <rect key="frame" x="18" y="270" width="184" height="20"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="check" title="Weakness on one side" bezelStyle="regularSquare" imagePosition="left" allowsMixedState="YES" inset="2" id="oRV-q0-vUc" customClass="RedGreenCheckbox" customModule="LIROS" customModuleProvider="target">
+                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                <font key="font" metaFont="system" size="16"/>
+                                            </buttonCell>
+                                        </button>
+                                        <button fixedFrame="YES" tag="4" translatesAutoresizingMaskIntoConstraints="NO" id="B2V-6a-dNY">
+                                            <rect key="frame" x="18" y="247" width="111" height="20"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="check" title="Facial droop" bezelStyle="regularSquare" imagePosition="left" allowsMixedState="YES" inset="2" id="Jnq-RU-coW" customClass="RedGreenCheckbox" customModule="LIROS" customModuleProvider="target">
+                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                <font key="font" metaFont="system" size="16"/>
+                                            </buttonCell>
+                                        </button>
+                                        <button fixedFrame="YES" tag="4" translatesAutoresizingMaskIntoConstraints="NO" id="rlV-fG-uK1">
+                                            <rect key="frame" x="18" y="224" width="154" height="20"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="check" title="Numbness of face" bezelStyle="regularSquare" imagePosition="left" allowsMixedState="YES" inset="2" id="XnS-5q-pm5" customClass="RedGreenCheckbox" customModule="LIROS" customModuleProvider="target">
+                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                <font key="font" metaFont="system" size="16"/>
+                                            </buttonCell>
+                                        </button>
+                                        <button fixedFrame="YES" tag="4" translatesAutoresizingMaskIntoConstraints="NO" id="TTf-un-OnT">
+                                            <rect key="frame" x="18" y="201" width="151" height="20"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="check" title="Numbness of arm" bezelStyle="regularSquare" imagePosition="left" allowsMixedState="YES" inset="2" id="X5O-v1-T1c" customClass="RedGreenCheckbox" customModule="LIROS" customModuleProvider="target">
+                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                <font key="font" metaFont="system" size="16"/>
+                                            </buttonCell>
+                                        </button>
                                         <button fixedFrame="YES" tag="4" translatesAutoresizingMaskIntoConstraints="NO" id="TzU-VK-VQM">
-                                            <rect key="frame" x="18" y="133" width="145" height="20"/>
+                                            <rect key="frame" x="18" y="178" width="145" height="20"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="check" title="Numbness of leg" bezelStyle="regularSquare" imagePosition="left" allowsMixedState="YES" inset="2" id="aaJ-5g-VUo" customClass="RedGreenCheckbox" customModule="LIROS" customModuleProvider="target">
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -5677,7 +5743,7 @@ or bending</string>
                                             </buttonCell>
                                         </button>
                                         <button fixedFrame="YES" tag="4" translatesAutoresizingMaskIntoConstraints="NO" id="av3-F6-m40">
-                                            <rect key="frame" x="18" y="110" width="96" height="20"/>
+                                            <rect key="frame" x="18" y="155" width="96" height="20"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="check" title="Confusion" bezelStyle="regularSquare" imagePosition="left" allowsMixedState="YES" inset="2" id="ceY-RM-9QD" customClass="RedGreenCheckbox" customModule="LIROS" customModuleProvider="target">
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -5685,7 +5751,7 @@ or bending</string>
                                             </buttonCell>
                                         </button>
                                         <button fixedFrame="YES" tag="4" translatesAutoresizingMaskIntoConstraints="NO" id="k1a-Kj-WTY">
-                                            <rect key="frame" x="18" y="87" width="120" height="20"/>
+                                            <rect key="frame" x="18" y="132" width="120" height="20"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="check" title="Double vision" bezelStyle="regularSquare" imagePosition="left" allowsMixedState="YES" inset="2" id="AT8-x2-izv" customClass="RedGreenCheckbox" customModule="LIROS" customModuleProvider="target">
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -5695,96 +5761,39 @@ or bending</string>
                                                 <action selector="deselectNoProblems:" target="eTZ-0b-krk" id="RCY-s5-CA2"/>
                                             </connections>
                                         </button>
-                                        <button fixedFrame="YES" tag="4" translatesAutoresizingMaskIntoConstraints="NO" id="IXf-w4-2Ci">
-                                            <rect key="frame" x="18" y="336" width="112" height="20"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <buttonCell key="cell" type="check" title="Blurry vision" bezelStyle="regularSquare" imagePosition="left" allowsMixedState="YES" inset="2" id="qHO-LS-2PD" customClass="RedGreenCheckbox" customModule="LIROS" customModuleProvider="target">
-                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                                                <font key="font" metaFont="system" size="16"/>
-                                            </buttonCell>
-                                        </button>
                                         <button fixedFrame="YES" tag="4" translatesAutoresizingMaskIntoConstraints="NO" id="1Kb-cQ-Ve1">
-                                            <rect key="frame" x="18" y="64" width="190" height="20"/>
+                                            <rect key="frame" x="18" y="109" width="190" height="20"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="check" title="Medication compliance" bezelStyle="regularSquare" imagePosition="left" allowsMixedState="YES" inset="2" id="O6P-iT-efO" customClass="RedGreenCheckbox" customModule="LIROS" customModuleProvider="target">
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system" size="16"/>
                                             </buttonCell>
                                         </button>
-                                        <button fixedFrame="YES" tag="4" translatesAutoresizingMaskIntoConstraints="NO" id="he9-Ua-V0W">
-                                            <rect key="frame" x="18" y="271" width="172" height="20"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <buttonCell key="cell" type="check" title="TIA - Slurred speech" bezelStyle="regularSquare" imagePosition="left" allowsMixedState="YES" inset="2" id="GRN-5H-GKx" customClass="RedGreenCheckbox" customModule="LIROS" customModuleProvider="target">
-                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                                                <font key="font" metaFont="system" size="16"/>
-                                            </buttonCell>
-                                        </button>
-                                        <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yda-aa-Cpy">
-                                            <rect key="frame" x="68" y="385" width="121" height="22"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="HMh-Co-rio">
-                                                <font key="font" metaFont="system"/>
-                                                <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                            </textFieldCell>
-                                        </textField>
-                                        <button fixedFrame="YES" tag="4" translatesAutoresizingMaskIntoConstraints="NO" id="632-wy-JWE">
-                                            <rect key="frame" x="18" y="18" width="83" height="20"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <buttonCell key="cell" type="check" title="Exercise" bezelStyle="regularSquare" imagePosition="left" allowsMixedState="YES" inset="2" id="3DD-bz-eUg" customClass="RedGreenCheckbox" customModule="LIROS" customModuleProvider="target">
-                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                                                <font key="font" metaFont="system" size="16"/>
-                                            </buttonCell>
-                                        </button>
-                                        <button fixedFrame="YES" tag="4" translatesAutoresizingMaskIntoConstraints="NO" id="TTf-un-OnT">
-                                            <rect key="frame" x="18" y="156" width="151" height="20"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <buttonCell key="cell" type="check" title="Numbness of arm" bezelStyle="regularSquare" imagePosition="left" allowsMixedState="YES" inset="2" id="X5O-v1-T1c" customClass="RedGreenCheckbox" customModule="LIROS" customModuleProvider="target">
-                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                                                <font key="font" metaFont="system" size="16"/>
-                                            </buttonCell>
-                                        </button>
                                         <button fixedFrame="YES" tag="4" translatesAutoresizingMaskIntoConstraints="NO" id="xgg-eI-iBe">
-                                            <rect key="frame" x="18" y="41" width="113" height="20"/>
+                                            <rect key="frame" x="18" y="86" width="113" height="20"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="check" title="Low salt diet" bezelStyle="regularSquare" imagePosition="left" allowsMixedState="YES" inset="2" id="5vz-40-f7i" customClass="RedGreenCheckbox" customModule="LIROS" customModuleProvider="target">
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system" size="16"/>
                                             </buttonCell>
                                         </button>
-                                        <button fixedFrame="YES" tag="4" translatesAutoresizingMaskIntoConstraints="NO" id="WTm-od-P17">
-                                            <rect key="frame" x="18" y="359" width="96" height="20"/>
+                                        <button fixedFrame="YES" tag="4" translatesAutoresizingMaskIntoConstraints="NO" id="632-wy-JWE">
+                                            <rect key="frame" x="18" y="63" width="83" height="20"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <buttonCell key="cell" type="check" title="Headache" bezelStyle="regularSquare" imagePosition="left" allowsMixedState="YES" inset="2" id="hMv-eq-WzA" customClass="RedGreenCheckbox" customModule="LIROS" customModuleProvider="target">
+                                            <buttonCell key="cell" type="check" title="Exercise" bezelStyle="regularSquare" imagePosition="left" allowsMixedState="YES" inset="2" id="3DD-bz-eUg" customClass="RedGreenCheckbox" customModule="LIROS" customModuleProvider="target">
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system" size="16"/>
                                             </buttonCell>
                                         </button>
-                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hGL-US-1w3">
-                                            <rect key="frame" x="18" y="388" width="44" height="17"/>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QrI-SK-OT8">
+                                            <rect key="frame" x="18" y="342" width="25" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Onset:" id="YfW-k5-11q">
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="TIA" id="up5-fN-xBS">
                                                 <font key="font" metaFont="system"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                         </textField>
-                                        <button fixedFrame="YES" tag="4" translatesAutoresizingMaskIntoConstraints="NO" id="YY3-SE-pUS">
-                                            <rect key="frame" x="18" y="225" width="224" height="20"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <buttonCell key="cell" type="check" title="TIA - Weakness on one side" bezelStyle="regularSquare" imagePosition="left" allowsMixedState="YES" inset="2" id="oRV-q0-vUc" customClass="RedGreenCheckbox" customModule="LIROS" customModuleProvider="target">
-                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                                                <font key="font" metaFont="system" size="16"/>
-                                            </buttonCell>
-                                        </button>
-                                        <button fixedFrame="YES" tag="4" translatesAutoresizingMaskIntoConstraints="NO" id="B2V-6a-dNY">
-                                            <rect key="frame" x="18" y="202" width="111" height="20"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <buttonCell key="cell" type="check" title="Facial droop" bezelStyle="regularSquare" imagePosition="left" allowsMixedState="YES" inset="2" id="Jnq-RU-coW" customClass="RedGreenCheckbox" customModule="LIROS" customModuleProvider="target">
-                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                                                <font key="font" metaFont="system" size="16"/>
-                                            </buttonCell>
-                                        </button>
                                     </subviews>
                                 </view>
                             </box>
