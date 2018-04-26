@@ -23,11 +23,19 @@ class ProcInjViewController: NSViewController, NSTextFieldDelegate {
 	
 	//ABI
 	@IBOutlet weak var lSysAnkleView: NSTextField!
-	@IBOutlet weak var lSysBrachView: NSTextField!
-	@IBOutlet weak var lABIIndexView: NSTextField!
+    @IBOutlet weak var lDiaAnkleView: NSTextField!
+    @IBOutlet weak var lAnklePulseView: NSTextField!
+    @IBOutlet weak var lSysBrachView: NSTextField!
+    @IBOutlet weak var lDiaBrachView: NSTextField!
+    @IBOutlet weak var lBrachPulseView: NSTextField!
+    @IBOutlet weak var lABIIndexView: NSTextField!
 	@IBOutlet weak var rSysAnkleView: NSTextField!
-	@IBOutlet weak var rSysBrachView: NSTextField!
-	@IBOutlet weak var rABIIndexView: NSTextField!
+    @IBOutlet weak var rDiaAnkleView: NSTextField!
+    @IBOutlet weak var rAnklePulseView: NSTextField!
+    @IBOutlet weak var rSysBrachView: NSTextField!
+    @IBOutlet weak var rDiaBrachView: NSTextField!
+    @IBOutlet weak var rBrachPulseView: NSTextField!
+    @IBOutlet weak var rABIIndexView: NSTextField!
 	
 	@IBOutlet var samplesView: NSTextView!
 	
@@ -74,9 +82,12 @@ class ProcInjViewController: NSViewController, NSTextFieldDelegate {
 		var finalResults = [String]()
 		
 		finalResults.append(ProcInjModel().processOfficeProceduresUsing(getButtonsIn(view: proceduresBox)))
+        finalResults.append(processABI())
 		finalResults.append(ProcInjModel().processInjectionsUsing(getButtonsIn(view: injectionsBox)))
 		finalResults.append(ProcInjModel().processLabsOrderedUsing(getButtonsIn(view: labBox)))
-		finalResults.append(ProcInjModel().processABIResults(left: lABIIndexView.stringValue, right: rABIIndexView.stringValue))
+        
+		//finalResults.append(ProcInjModel().processABIResults(left: lABIIndexView.stringValue, right: rABIIndexView.stringValue))
+        
 		if !samplesView.string.isEmpty {
 			finalResults.append("Samples given:\n\(samplesView.string)")
 		}
@@ -90,4 +101,44 @@ class ProcInjViewController: NSViewController, NSTextFieldDelegate {
 		
 		print(filteredResults.joined(separator: "\n"))
 	}
+    
+    func processABI() -> String {
+        var resultsArray = [String]()
+        var leftResults = [String]()
+        var rightResults = [String]()
+        var results = String()
+        
+        if !lSysAnkleView.stringValue.isEmpty && !lDiaAnkleView.stringValue.isEmpty && !lAnklePulseView.stringValue.isEmpty {
+            leftResults.append("BP L Leg: \(lSysAnkleView.stringValue)/\(lDiaAnkleView.stringValue), P \(lAnklePulseView.stringValue)")
+        }
+        if !lSysBrachView.stringValue.isEmpty && !lDiaBrachView.stringValue.isEmpty && !lBrachPulseView.stringValue.isEmpty {
+            leftResults.append("BP L Arm: \(lSysBrachView.stringValue)/\(lDiaBrachView.stringValue), P \(lBrachPulseView.stringValue)")
+        }
+        if !lABIIndexView.stringValue.isEmpty {
+            leftResults.append("Ankle Brachial Index = \(lABIIndexView.stringValue)")
+        }
+        if !leftResults.isEmpty {
+            resultsArray.append("Left: \(leftResults.joined(separator: "; "))")
+        }
+        
+        if !rSysAnkleView.stringValue.isEmpty && !rDiaAnkleView.stringValue.isEmpty && !rAnklePulseView.stringValue.isEmpty {
+            rightResults.append("BP R Leg: \(rSysAnkleView.stringValue)/\(rDiaAnkleView.stringValue), P \(rAnklePulseView.stringValue)")
+        }
+        if !rSysBrachView.stringValue.isEmpty && !rDiaBrachView.stringValue.isEmpty && !rBrachPulseView.stringValue.isEmpty {
+            rightResults.append("BP R Arm: \(rSysBrachView.stringValue)/\(rDiaBrachView.stringValue), P \(rBrachPulseView.stringValue)")
+        }
+        if !rABIIndexView.stringValue.isEmpty {
+            rightResults.append("Ankle Brachial Index = \(rABIIndexView.stringValue)")
+        }
+        if !rightResults.isEmpty {
+            resultsArray.append("Right: \(rightResults.joined(separator: "; "))")
+        }
+        
+        if !resultsArray.isEmpty {
+            results = "Ankle Brachial Indexes:\n\(resultsArray.joined(separator: "\n"))"
+        }
+        
+        return results
+    }
 }
+
